@@ -1,5 +1,5 @@
 body {
-    background-color: #ededf5 !important;
+    background-color: #203d67 !important;
     height: 100%;
     overflow-x: hidden;
 }
@@ -68,6 +68,7 @@ ul {
     margin: 50px auto;
     padding: 15px;
     box-shadow: 3px 3px 40px black;
+    background-color: #203d67 ;
     border-radius: 12px;
     margin-top: 10px;
 }
@@ -106,7 +107,6 @@ ul {
     padding-top: 50px;
     border-radius: 100px;
 }
-
 
 
 @media screen and (max-width: 992px) {

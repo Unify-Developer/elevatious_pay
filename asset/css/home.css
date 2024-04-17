@@ -1,0 +1,192 @@
+.home_img_svg {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.bg-nav {
+    background-color: #3f52e3 !important;
+}
+
+.bg-home {
+    background-color: #3f52e3 !important;
+    height: 590px;
+}
+
+.bd_head {
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 400px !important;
+    height: 100%;
+    box-shadow: 5px 5px 50px rgb(191, 191, 199);
+    background-color: white !important;
+}
+
+.logo_img {
+    border-radius: 600px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center !important;
+}
+
+.img_cent {
+    text-align: center;
+}
+
+
+.e_pay {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    /* font-family: 'Courier New', Courier; */
+    font-weight: bolder;
+    font-size: 20px;
+    color: #3f52e3;
+}
+
+.userName {
+    margin-left: 10px;
+    width: 158% !important;
+    border: 1px solid #3f52e3 !important;
+}
+
+.passWord {
+    margin-left: 10px;
+    width: 158% !important;
+    border: 1px solid #3f52e3 !important;
+    margin-top: 10px;
+}
+
+
+.add {
+    font-family: inherit;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    margin-left: 11px;
+    color: #3f52e3 !important;
+}
+
+
+.btn_lg {
+    color: white;
+}
+
+.btn_lg_bg {
+    background-color: #3f52e3;
+}
+
+.btn_lg:hover {
+    text-decoration-line: none;
+    color: white;
+}
+
+.sgn_up {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.wel_pay {
+    margin-top: 100px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sub_title {
+    color: white;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sub_text {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lg_btn {
+    width: 90px;
+    border: 1px solid #1da966;
+    background: #1da966;
+    color: #fff;
+    height: 60px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 18px !important;
+}
+
+.reg_btn {
+    margin-left: 30px;
+    width: 110px;
+    border: 1px solid #ff7294;
+    background: #ff7294;
+    color: #fff;
+    height: 60px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 18px !important;
+}
+
+.head_section {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #203d67;
+    text-align: center;
+}
+
+.head_section_text {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: rgba(45, 72, 146, 0.8);
+}
+
+.check_out {
+    background: #3f52e3;
+  border: 1px solid #3f52e3;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .home_img_svg {
+        height: 0%;
+        width: 0%;
+    }
+
+    .bd_head {
+        margin-top: 0px;
+        width: 90% !important;
+        /* margin: 50px auto; */
+        padding: 20px;
+        height: 100%;
+    }
+
+
+
+    .passWord,
+    .userName {
+        width: 120% !important;
+    }
+
+
+    .add {
+        font-family: inherit;
+        line-height: 1.2;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        margin-left: 11px;
+
+    }
+
+}

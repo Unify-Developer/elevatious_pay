@@ -38,7 +38,7 @@
     <title> Login | Elevation Pay </title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="icon" href="./asset/Img/reference.png">
-    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/styl1.css">
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
 </head>
 
@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <div class="container bd_head_login">
+    <div class="container">
         <div class="form_body_login">
             <form action="" method='post'>
                 <div class="form-group">
