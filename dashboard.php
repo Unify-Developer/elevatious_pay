@@ -19,6 +19,8 @@ require './include/config.php';
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -26,18 +28,62 @@ require './include/config.php';
 
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
 
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="./dashboard.php" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <div class="" style="display: inline-flex;">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-pushmenu">
+                        <div class="push">
+                            <a class="nav-push" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+
+
+                <div class="topbar-divider d-none d-sm-block">
+                    <div class="ml-auto ">
+                        <ul>
+                            <li class="nav-item dropdown no-arrow ">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 bold">Vincent
+                                        TV</span>
+                                    <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg" style="height: 30px; width: 30px;">
+                                </a>
+                                <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Settings
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Activity Log
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">
+                                        <i href="./logout.php" class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"> </i>
+                                        Logout
+                                    </a>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
+        <div class="" style="display: block;">
+            <div class="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus explicabo delectus porro, autem iure voluptatum adipisci incidunt fugiat culpa eius velit? Fugiat corrupti debitis suscipit dicta sit, nam optio temporibus?</p>
+            </div>
+        </div>
+
 
         <aside class="main-sidebar bg-primary sidebar-dark-primary elevation-4">
             <div class="sidebar">
@@ -65,51 +111,51 @@ require './include/config.php';
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-                        <li class="nav-item">
+                        <li class="nav-side">
                             <a href="pages/widgets.html" class="nav-link">
                                 <div class="text-light">
 
                                     <i class="nav-icon  fa-solid fa-house"></i>
                                     <p>
                                         Home
-                                        <!-- <span class="right badge badge-danger">Main</span> -->
+                                        <span class="right badge badge-danger">Main</span>
                                     </p>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-side">
                             <a href="pages/widgets.html" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-side">
                             <a href="pages/widgets.html" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-list-check"></i>
-                                <p> Transactions</p>
-                            </div>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <p> Our Services </p>
-                            </div>
+                                <div class="text-light">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <p> Transactions</p>
+                                </div>
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-side">
                             <a href="pages/widgets.html" class="nav-link">
-                            <div class="text-light">
-                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                <p> Settings </p>
-                            </div>
+                                <div class="text-light">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <p> Our Services </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <p> Settings </p>
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -118,6 +164,14 @@ require './include/config.php';
             </div>
         </aside>
     </div>
+
+
+
+
+    <!-- <footer class="Footer text-center">
+        &copy; Elevatious - Pay | Tech Net &reg; 2024
+    </footer> -->
+
 
     <script src="plugins/jquery/jquery.min.js"></script>
 

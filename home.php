@@ -10,7 +10,7 @@ require './include/config.php';
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ELevatious-Pay Home</title>
-        <link rel="stylesheet" href="./asset/css/home.css">
+        <link rel="stylesheet" href="./asset/css/hom.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -19,7 +19,11 @@ require './include/config.php';
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-nav">
-        <a class="navbar-brand text-light" href="#">Elevation Pay</a>
+        <a class="navbar-brand text-light " href="#">
+            <div class="eeee">
+                Elevatious Pay
+            </div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,15 +45,15 @@ require './include/config.php';
             <div class="col-lg-7 col-md-12">
                 <img src="./asset/img/home.svg" class="home_img_svg">
             </div>
-
-            <!-- <div class="container bg-light bd_head">
+            <div class="col-lg-5 col-md-12">
+                <div class="container bg-light bd_head">
                     <form action method='post'>
                         <div class="img_cent">
                             <img src="./assets/img/icon.jpg" class="rounded-circle logo_img">
                         </div>
                         <h3>
                             <div class="e_pay">
-                                Elevation Pay
+                                Elevatious Pay
                             </div>
                         </h3>
                         <div>
@@ -76,8 +80,9 @@ require './include/config.php';
                             Don't have an Account <a href="register.php" class="sgn_up">Sign up</a>
                         </p>
                     </div>
-                </div> -->
-            <div class="col-lg-5 col-md-12 ">
+                </div>
+            </div>
+            <!-- <div class="col-lg-5 col-md-12 ">
                 <div class="wel_pay">
                     <p> WELCOME TO ELEVATIOUS PAY</p>
                 </div>
@@ -104,7 +109,7 @@ require './include/config.php';
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 

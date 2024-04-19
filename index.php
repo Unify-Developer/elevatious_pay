@@ -38,7 +38,7 @@
     <title> Login | Elevation Pay </title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="icon" href="./asset/Img/reference.png">
-    <link rel="stylesheet" href="./asset/css/styl1.css">
+    <link rel="stylesheet" href="./asset/css/style11.css">
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
 </head>
 
