@@ -75,6 +75,9 @@ ul{
     list-style-type: none !important;
 }
 
+li{
+    list-style-type: none !important;
+}
 .no-arrow{
     padding-top: -5px;
 

@@ -1,8 +1,6 @@
 body {
-    /* background-color: #c0c0c0 !important; */
-    background-color: #203d67 !important;
+    background-color: #3f52e3;
     height: 100%;
-    overflow-x: hidden;
 }
 
 a {
@@ -62,7 +60,7 @@ ul {
     line-height: 1.2;
     margin-bottom: .5rem;
     font-weight: 500;
-    color: darkblue;
+    color: #3f52e3;
 }
 
 .form_body_login {
@@ -107,6 +105,10 @@ ul {
 .t_img1 {
     padding-top: 50px;
     border-radius: 100px;
+}
+
+.label{
+    color: #3f52e3 !important;
 }
 
 

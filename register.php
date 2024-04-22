@@ -55,22 +55,12 @@ if (isset($_POST['register'])) {
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
         crossorigin="anonymous"></script>
     <link rel="icon" href="./asset/Img/reference.png">
-    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/kolade.css">
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 ">
-                <label class="login">
-                    Register
-                </label>
-            </div>
-        </div>
-    </div>
-
-    <div class="container t1_top">
+    <div class="container">
         <div class="text-center">
             <img class="t_img" src="./Asset/Img/reference.png">
             <div class="t_top">
@@ -132,7 +122,7 @@ if (isset($_POST['register'])) {
 
                     <div class="text-center">
                         <label> Already Have An Account? Click
-                            <a href="./index.php"> Here </a> To Login
+                            <a href="login.php"> Here </a> To Login
                         </label>
                     </div>
                 </form>

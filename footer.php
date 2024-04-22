@@ -32,4 +32,4 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
     </ul>
 
-    <p class="text-center text-muted">&copy; 2024 Elevatious Pay, Inc</p>
+    <p class="text-center text-muted">&copy; Elevatious - Pay | Tech Net &reg; 2024</p>

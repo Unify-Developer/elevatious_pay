@@ -5,7 +5,14 @@
 }
 
 .bg-nav {
-    background-color: #3f52e3 !important;
+    background-color: 5px 5px 50px rgb(191, 191, 199);
+}
+
+.nav_col {
+    color: #3f52e3 !important;
+    font-weight: bold;
+    line-height: 2.0;
+    padding-right: 5px !important;
 }
 
 .bg-home {
@@ -17,7 +24,7 @@
     border-radius: 20px;
     margin-top: 50px;
     width: 400px !important;
-    height: 100%;
+    height: 90%;
     box-shadow: 5px 5px 50px rgb(191, 191, 199);
     background-color: white !important;
 }
@@ -25,8 +32,8 @@
 .logo_img {
     border-radius: 600px;
     margin-top: 30px;
-    width: 50px;
-    height: 50px;
+    width: 110px;
+    height: 100px;
     text-align: center !important;
 }
 
@@ -36,10 +43,12 @@
 
 .eeee {
     font-size: 30px;
-    color: white;
+    color: #3f52e3;
+    font-weight: bold;
 }
 
 .e_pay {
+    /* text-transform: uppercase !important; */
     margin-top: 30px;
     margin-bottom: 5px;
     text-align: center;
@@ -143,18 +152,18 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.5;
-    color: #203d67;
+    color: #3f52e3;
     text-align: center;
 }
 
-.head_section_text {
+/* .head_section_text {
     font-family: "Work Sans", Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.4;
     font-weight: 500;
     color: rgba(45, 72, 146, 0.8);
-}
+} */
 
 .check_out {
     background: #3f52e3;
@@ -168,10 +177,46 @@
     border-radius: 20px;
     box-shadow: 5px 5px 50px rgb(191, 191, 199);
     background-color: rgb(243, 242, 242);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Adding transition for smooth effect */
+    position: relative;
+    /* Adding position relative for overlay */
+}
+
+.airt:hover {
+    transform: scale(1.05);
+    background-color: #3f52e3;
+}
+
+.airt:hover .e_pay,
+.airt:hover .add_services {
+    color: white !important;
+    /* Changing text color to white on hover */
 }
 
 
+.img_con {
+    box-shadow: 5px 5px 50px rgb(191, 191, 199);
 
+}
+
+.add_section_text {
+    font-family: inherit;
+    line-height: 1.9;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    margin-left: 11px;
+    color: #3f52e3 !important;
+}
+
+.add_services {
+    font-family: inherit;
+    line-height: 1.4;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    margin-left: 11px;
+    color: #3f52e3 !important;
+}
 
 @media screen and (max-width: 600px) {
     .home_img_svg {
