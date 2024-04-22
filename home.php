@@ -9,8 +9,8 @@ require './include/config.php';
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ELevatious-Pay Home</title>
-        <link rel="stylesheet" href="./asset/css/hom.css">
+        <title> Home | ELevatious-Pay</title>
+        <link rel="stylesheet" href="./asset/css/hom2.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -136,6 +136,41 @@ require './include/config.php';
         <h2 class="mb-3 head_section">Our Services</h2>
     </div>
 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="airt mb-5">
+                    <img src="./asset/img/logo.png" alt="LOGO TESTUNG" height="100px">
+                    <div class="mt-3">
+                        <h3 c>AIRTIME AND DATA</h3>
+                        <p> Maximize Your Earnings: <br> Get 4% Cashback on Every <br> Airtime & Data Top Up!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center mt-5">
+                <div class="airt mb-5">
+                    <img src="./asset/img/logo.png" alt="LOGO TESTUNG" height="100px">
+                    <div class="mt-3">
+                        <h3>Cable Tv Subscriptions</h3>
+                        <p>Never Miss a Moment: Instantly<br>Activate Your Favorite TV Channels!<br>Enjoy Exclusive Discounts on GOTV,<br>Startimes, DSTV, and More!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center mt-5">
+                <div class="airt mb-5 mt-5">
+                    <img src="./asset/img/logo.png" alt="LOGO TESTUNG" height="100px">
+                    <div class="mt-3">
+                        <h3>Utility Payments</h3>
+                        <p> "Stay Juiced: Instantly Recharge <br> for Electricity Token Activation <br> and Never Lose Power!" </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+    include_once("./footer.php");
+    ?>
 </body>
 <script src="plugins/jquery/jquery.min.js"></script>
 
