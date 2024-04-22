@@ -1,6 +1,7 @@
 .nav-item {
     list-style-type: none;
     padding-right: 40px;
+    
 }
 
 .nav-link::after {
@@ -51,7 +52,7 @@
     font-weight: bold;
 }
 
-.hhhh::after {
+/* .hhhh::after {
     content: "";
     position: absolute;
     height: 3px;
@@ -63,9 +64,30 @@
     transform: scaleX(0);
     transition: transform .4s ease-in-out;
     transform-origin: left;
-}
-
+} */
+/* 
 .hhhh:hover::after {
     transform: scaleX(1);
     transform-origin: right;
+} */
+
+ul{
+    list-style-type: none !important;
+}
+
+.no-arrow{
+    padding-top: -5px;
+
+}
+
+/* .info-text{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+} */
+
+.infovi{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: px;
 }

@@ -3,7 +3,7 @@
 // ini_set('SMTP', 'smtp.example.com');
 // ini_set('smtp_port', 587);
 
-require './include/config.php';
+require './include/config.php'; 
 
 if (isset($_POST['forgot_password'])) {
     $email = $_POST['email'];
