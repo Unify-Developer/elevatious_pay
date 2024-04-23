@@ -54,7 +54,7 @@ require './include/config.php';
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-git
+
                     <li class="nav-item dropdown no-arrow ml-auto ">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
