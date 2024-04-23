@@ -1,0 +1,403 @@
+.home_img_svg {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.bg-nav {
+    background-color: 5px 5px 50px rgb(191, 191, 199);
+}
+
+.nav_col {
+    color: #3f52e3 !important;
+    font-weight: bold;
+    line-height: 2.0;
+    padding-right: 5px !important;
+}
+
+.nav_cool {
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 2.0;
+    padding-right: 5px !important;
+}
+
+.bg-home {
+    background-color: #3f52e3 !important;
+    height: 590px;
+}
+
+.bd_head {
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 400px !important;
+    height: 90%;
+    box-shadow: 5px 5px 50px rgb(191, 191, 199);
+    background-color: white !important;
+}
+
+.logo_img {
+    border-radius: 600px;
+    margin-top: 30px;
+    width: 110px;
+    height: 100px;
+    text-align: center !important;
+}
+
+.img_cent {
+    text-align: center;
+}
+
+.eeee {
+    font-size: 30px;
+    color: #3f52e3;
+    font-weight: bold;
+}
+
+.e_pay {
+    /* text-transform: uppercase !important; */
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    /* font-family: 'Courier New', Courier; */
+    font-weight: bolder;
+    font-size: 20px !important;
+    color: #3f52e3;
+}
+
+.userName {
+    margin-left: 10px;
+    width: 158% !important;
+    border: 1px solid #3f52e3 !important;
+}
+
+.passWord {
+    margin-left: 10px;
+    width: 158% !important;
+    border: 1px solid #3f52e3 !important;
+    margin-top: 10px;
+}
+
+
+.add {
+    font-family: inherit;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    margin-left: 11px;
+    color: #3f52e3 !important;
+}
+
+
+.btn_lg {
+    color: white;
+}
+
+.btn_lg_bg {
+    background-color: #3f52e3;
+}
+
+.btn_lg:hover {
+    text-decoration-line: none;
+    color: white;
+}
+
+.sgn_up {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.wel_pay {
+    margin-top: 100px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sub_title {
+    color: white;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sub_text {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lg_btn {
+    width: 90px;
+    border: 1px solid #1da966;
+    background: #1da966;
+    color: #fff;
+    height: 60px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 18px !important;
+}
+
+.reg_btn {
+    margin-left: 30px;
+    width: 110px;
+    border: 1px solid #ff7294;
+    background: #ff7294;
+    color: #fff;
+    height: 60px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 18px !important;
+}
+
+.head_section {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #3f52e3;
+    text-align: center;
+}
+
+
+/* .head_section_text {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: rgba(45, 72, 146, 0.8);
+} */
+
+.check_out {
+    background: #3f52e3;
+    border: 1px solid #3f52e3;
+    color: #fff;
+    margin-top: 15px;
+    padding: 15px !important;
+}
+
+.check_out:hover {
+    transform: scale(1.05);
+    background-color: #00c3ff;
+    color: rgb(39, 35, 35);
+}
+
+.our_services_text {
+    /* text-transform: uppercase !important; */
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    /* font-family: 'Courier New', Courier; */
+    font-weight: bolder;
+    font-size: 20px !important;
+    color: #3f52e3;
+}
+
+.airt {
+    width: 300px;
+    height: 260px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px rgb(191, 191, 199);
+    background-color: rgb(243, 242, 242);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.airt:hover {
+    transform: scale(1.05);
+    background-color: #3f52e3;
+}
+
+.airt:hover .e_pay,
+.airt:hover .add_services {
+    color: white !important;
+    /* Changing text color to white on hover */
+}
+
+.utility{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
+.img_con {
+    box-shadow: 5px 5px 50px rgb(191, 191, 199);
+
+}
+
+.add_section_text {
+    font-family: inherit;
+    line-height: 1.9;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    margin-left: 11px;
+    color: #3f52e3 !important;
+}
+
+
+.add_services {
+    font-family: inherit;
+    line-height: 1.4;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    margin-left: 11px;
+    color: #3f52e3 !important;
+}
+
+.fre_ask {
+    text-transform: uppercase !important;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier;
+    font-weight: bolder;
+    font-size: 40px !important;
+    color: #3f52e3;
+}
+
+.fre_add {
+    line-height: 1.5;
+    color: #3f52e3 !important;
+    font-weight: 450;
+    text-align: center;
+}
+
+.trust {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: 'Courier New', Courier;
+    font-weight: bolder;
+    font-size: 30px !important;
+    color: #3f52e3;
+}
+
+.aa{
+    margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+    .home_img_svg {
+        height: 0%;
+        width: 0%;
+    }
+
+    .bd_head {
+        margin-top: 0px;
+        width: 90% !important;
+        /* margin: 50px auto; */
+        padding: 20px;
+        height: 100%;
+    }
+    
+
+    
+    .passWord,
+    .userName {
+        width: 120% !important;
+    }
+
+
+    .add {
+        font-family: inherit;
+        line-height: 1.2;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        margin-left: 11px;
+
+    }
+
+    .head_section {
+        font-size: 30px !important;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #3f52e3;
+        text-align: center;
+    }
+
+    .add_section_text {
+        font-family: inherit;
+        line-height: 1.5;
+        margin-bottom: .5rem;
+        font-weight: 400;
+        margin-left: 11px;
+        color: #3f52e3 !important;
+    }
+
+    .check_out {
+        height: 50px;
+        width: 35%;
+        margin-bottom: 50px;
+        padding: 3% !important;
+    }
+    
+    .airt {
+        width: 250px;
+        height: 260px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 50px rgb(191, 191, 199);
+        background-color: rgb(243, 242, 242);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .airt:hover {
+        transform: scale(1.03);
+        background-color: #3f52e3;
+    }
+
+    .airt:hover .our_services_text,
+    .airt:hover .add_services {
+        color: white !important;
+        /* Changing text color to white on hover */
+    }
+
+    .cable{
+        margin-left: 40px;
+        width: 280px;
+        height: 275px;
+    }
+    .utility{
+        height: 255px;
+        margin-top: 0% !important;
+        margin-bottom: 0%;
+    }
+    
+    .mobile_img{
+        height: 0% ;
+        width: 0%;
+    }
+    
+    .trust {
+    
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #3f52e3;
+        font-size: 28px !important;
+    }
+    .faq{
+        height: 0% ;
+        width: 0% ;
+    }
+    
+    .fre_ask {
+        margin-top: 10px;
+        font-weight: bolder;
+        font-size: 30px !important;
+    }
+    
+    .fre_add{
+        margin-top: 0px !important;
+    }
+    
+    .aa{
+        margin-top: 0px;
+    }
+}

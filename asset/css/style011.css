@@ -1,0 +1,151 @@
+body {
+    background-color: #3f52e3;
+    height: 100%;
+}
+
+a {
+    text-decoration-line: none !important;
+}
+
+li a {
+    color: rgb(6, 6, 148) !important;
+    font-family: 'Monospace';
+    font-size: 20px;
+}
+
+ul {
+    padding: 20px !important;
+    margin-left: 30px;
+}
+
+.btn_gmail {
+    width: 100%;
+    border-radius: 10px !important;
+}
+
+.btn_login {
+    width: 100%;
+    background-color: darkblue !important;
+    border-radius: 10px !important;
+}
+
+.btn_login:hover {
+    background-color: darkblue !important;
+    background-color: rgb(7, 7, 206) !important;
+}
+
+.btn_register {
+    width: 100%;
+    background-color: darkblue !important;
+}
+
+.btn_register:hover {
+    background-color: rgb(7, 7, 206) !important;
+}
+
+.login {
+    background-color: white;
+    color: darkblue;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    position: absolute;
+    left: 1px;
+
+}
+
+.t_top {
+    font-family: inherit;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    color: darkblue;
+}
+
+.form_body_login {
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 3px 3px 40px black;
+    background-color: #f1f1f1 ;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.form_body_register {
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 3px 3px 40px black;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.form_body_forget {
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 3px 3px 40px black;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.form-control {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.t_img {
+    height: 250px;
+    /* padding-top: 10px; */
+}
+
+.t1_top {
+    padding-top: 20px;
+}
+
+.t_img1 {
+    padding-top: 50px;
+    border-radius: 100px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .bd_head_login {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0px;
+        height: 420px;
+    }
+
+    .bd_head_register {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0px;
+        height: 420px;
+    }
+
+    .t_img {
+        height: 180px;
+        padding-top: 10px;
+    }
+
+    .chk_fgt {
+        display: inline-flex;
+    }
+
+    /* .bd_head_register{
+        width: 90% !important;
+        margin: 30px auto;
+        padding: 0px;
+        height: 420px;
+    } */
+
+    html,
+    body {
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+}
