@@ -1,10 +1,20 @@
 <?php
+
+// session_start();
+
+// Check if the user is logged in
+// if (!isset($_SESSION['user_name'])) {
+//     header('Location: login.php');
+//     exit();
+// }
+
+// Display success message
+// echo 'Login successful! Welcome, ' . $_SESSION['username'];
+?>
+
+<?php
 require './include/config.php';
 
-// if(!$_SESSION['admin_login']){
-//     header("location: ./index.php");
-//     return;
-// }
 ?>
 
 <html lang="en">
@@ -44,14 +54,12 @@ require './include/config.php';
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-git
+
                     <li class="nav-item dropdown no-arrow ml-auto ">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 bold">Vincent
                                 TV</span>
-                            <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg"
-                                style="height: 30px; width: 30px;">
+                            <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg" style="height: 30px; width: 30px;">
                         </a>
                         <div class="dropdown-menu dropdown-menu shadow animated--grow-in">
                             <a class="dropdown-item" href="#">
@@ -78,182 +86,78 @@ git
 
                 <hr>
 
-                <ul  class="lois">
+                <ul>
                     <!-- class="" style="margin-right: 30px;" -->
-                    <li>
-                        <div class="container-fluid   "
-                            style="height: 160px; padding: 10px; background-color:  rgba(34, 104, 244, 0.886); border-radius: 8px; margin-bottom: 10px;">
-                            <h2 class="text-white"> Hi, Vincent!</h2>
-                        </div>
-                    </li>
-
-                    <li>
-
-                        <h3 class="mt-4 " style="font-family: monospace; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Quick Links</u></h3>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                                <div class="card border-left-success shadow py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <i class="fas fa-wifi fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-center"> Airtime </p>
-                            </div>
-                            <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                                <div class="card border-left-info shadow py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <i class="fas fa-arrow-alt-circle-down fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-center"> Data Subscription </P>
-                            </div>
-
-                            <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                                <div class="card border-left-warning shadow  py-2">
-
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-center">Electricity bills </P>
-                            </div>
-                            <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                                <div class="card border-left-primary shadow py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <i class="fas fa-list fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-center"> WAEC/NECO PIN</P>
-                            </div>
-
-                        </div>
-                        
-                    </li>
-            
-            </ul>
-  
-            <hr>
-
-            <ul>
-                <h3 class="mt-4" style="font-family: monospace; text-align: center; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Other Services</u></h3>
-                <div class="row">
-
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                    </div>
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            <!-- Earnings (Monthly) -->
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            <!-- $40,000 -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                    <p>
+                    <div class="container-fluid   " style="height: 160px; padding: 10px; background-color: rgb(133, 158, 248); border-radius: 8px; margin-bottom: 10px;">
+                        <h2 class="text-white"> <?php ?> Welcome UNIFY </h2>
                     </div>
+                    </p>
 
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                        <div class="card border-left-success shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                    </div>
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            <!-- Earnings (Annual) -->
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            <!-- $215,000 -->
-                                        </div>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                        <div class="card border-left-info shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                    </div>
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                            <!-- Tasks -->
-                                        </div>
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                    <!-- 50% -->
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <!-- <div class="progress progress-sm mr-2">
-                                            <div class="progress-bar bg-info" role="progressbar"
-                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
-                                        </div> -->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
+                    <h3 class="mt-4 " style="font-family: monospace;"><u>Quick Links</u></h3>
+                    <div class="row">
                         <div class="col-md-3 col-6 mb-4 pt-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card border-left-success shadow py-2 quick_links">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                            <i class="fas fa-wifi fa-2x text-gray-300"></i>
                                         </div>
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                <!-- Pending Requests -->
-                                            </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <!-- 18 -->
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
+                            <p class="text-center"> Airtime </p>
+                        </div>
+                        <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="card border-left-info shadow py-2 quick_links">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <i class="fas fa-arrow-alt-circle-down fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center"> Data Subscription </P>
+                        </div>
+
+                        <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="card border-left-warning shadow py-2 quick_links">
+
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center">Electricity bills </P>
+                        </div>
+                        <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="card border-left-primary shadow  py-2 quick_links">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <i class="fas fa-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center"> WAEC PIN</P>
                         </div>
 
                     </div>
+
+                </ul>
+
+
+                <hr>
+
+                <ul>
+                    <h3 class="mt-4" style="font-family: monospace; text-align: center;"><u>Other Services</u></h3>
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
@@ -334,7 +238,7 @@ git
                         </div>
 
                         <!-- Pending Requests Card Example -->
-                        <div class="col-md-3 col-6 mb-4 pt-4">
+                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -399,7 +303,7 @@ git
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="dashboard.php" class="nav-link">
                                 <div class="text-light">
 
                                     <i class="nav-icon  fa-solid fa-house"></i>
@@ -411,7 +315,7 @@ git
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -420,7 +324,7 @@ git
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-list-check"></i>
                                     <p> Transactions</p>
@@ -429,7 +333,7 @@ git
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-chart-simple"></i>
                                     <p> Our Services </p>
@@ -438,7 +342,7 @@ git
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     <p> Settings </p>
@@ -448,7 +352,7 @@ git
                         <hr>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -458,7 +362,7 @@ git
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -468,7 +372,7 @@ git
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -478,7 +382,7 @@ git
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -488,7 +392,7 @@ git
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -496,9 +400,8 @@ git
                                 </div>
                             </a>
                         </li>
-
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -512,10 +415,6 @@ git
             </div>
         </aside>
     </div>
-
-
-
-
 
 
 
