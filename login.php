@@ -4,13 +4,13 @@
 
     if(isset($_POST['login'])){
         // $email = $_POST['email'];
-        $username = $_POST['username'];
+        $user_name = $_POST['user_name'];
         $password = $_POST['password'];
 
         
        
-        $sql = $conn->prepare("SELECT * FROM student WHERE username = :username AND password = :password");
-        $sql->bindParam(':username', $username);
+        $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name AND password = :password");
+        $sql->bindParam(':user_name', $user_name);
         $sql->bindParam(':password', $password);
         $sql->execute();
         

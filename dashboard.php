@@ -1,10 +1,20 @@
 <?php
+
+// session_start();
+
+// Check if the user is logged in
+// if (!isset($_SESSION['user_name'])) {
+//     header('Location: login.php');
+//     exit();
+// }
+
+// Display success message
+// echo 'Login successful! Welcome, ' . $_SESSION['username'];
+?>
+
+<?php
 require './include/config.php';
 
-// if(!$_SESSION['admin_login']){
-//     header("location: ./index.php");
-//     return;
-// }
 ?>
 
 <html lang="en">
@@ -65,8 +75,7 @@ require './include/config.php';
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">
-                                <i href="./logout.php" class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"> </i>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal" href="logout.php" class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400">
                                 Logout
                             </a>
                         </div>
@@ -81,16 +90,16 @@ require './include/config.php';
                     <!-- class="" style="margin-right: 30px;" -->
                     <p>
                     <div class="container-fluid   " style="height: 160px; padding: 10px; background-color: rgb(133, 158, 248); border-radius: 8px; margin-bottom: 10px;">
-                        <h2 class="text-white"> Hi, Vincent!</h2>
+                        <h2 class="text-white"> <?php ?> Welcome UNIFY </h2>
                     </div>
                     </p>
 
-                    <p>
+
 
                     <h3 class="mt-4 " style="font-family: monospace;"><u>Quick Links</u></h3>
                     <div class="row">
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                            <div class="card border-left-success shadow py-2">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="card border-left-success shadow py-2 quick_links">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-auto">
@@ -101,8 +110,8 @@ require './include/config.php';
                             </div>
                             <p class="text-center"> Airtime </p>
                         </div>
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                            <div class="card border-left-info shadow py-2">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="card border-left-info shadow py-2 quick_links">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-auto">
@@ -114,8 +123,8 @@ require './include/config.php';
                             <p class="text-center"> Data Subscription </P>
                         </div>
 
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                            <div class="card border-left-warning shadow  py-2">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="card border-left-warning shadow py-2 quick_links">
 
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -127,8 +136,8 @@ require './include/config.php';
                             </div>
                             <p class="text-center">Electricity bills </P>
                         </div>
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
-                            <div class="card border-left-primary shadow py-2">
+                        <div class="col-md-3 col-6 mb-4 pt-4" >
+                            <div class="card border-left-primary shadow  py-2 quick_links" >
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-auto">
@@ -142,9 +151,8 @@ require './include/config.php';
 
                     </div>
 
-                    </p>
-
                 </ul>
+
 
                 <hr>
 
@@ -153,7 +161,7 @@ require './include/config.php';
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -175,7 +183,7 @@ require './include/config.php';
                         </div>
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -197,7 +205,7 @@ require './include/config.php';
                         </div>
 
                         <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -230,7 +238,7 @@ require './include/config.php';
                         </div>
 
                         <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -255,7 +263,7 @@ require './include/config.php';
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -277,7 +285,7 @@ require './include/config.php';
                         </div>
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -299,7 +307,7 @@ require './include/config.php';
                         </div>
 
                         <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -332,7 +340,7 @@ require './include/config.php';
                         </div>
 
                         <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4 pt-4">
+                        <div class="col-md-3 col-6 mb-4 pt-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">

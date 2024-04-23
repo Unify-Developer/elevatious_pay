@@ -1,5 +1,32 @@
 <?php
 require './include/config.php';
+
+$msg = "";
+
+if (isset($_POST['login'])) {
+    $user_name = $_POST["user_name"];
+    $password = $_POST["password"];
+
+
+    $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name AND password = :password");
+    $sql->bindParam(':user_name', $user_name);
+    $sql->bindParam(':password', $password);
+    $sql->execute();
+
+
+
+    if ($sql->rowCount() >= 0) {
+
+        $result = $sql->fetch(PDO::FETCH_ASSOC);
+
+        // $msg = 'Welcome '. $result[ 'full_name' ];
+
+        header('Location: dashboard.php');
+    } else {
+        $msg = 'Invalid login Details';
+    }
+};
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +37,8 @@ require './include/config.php';
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Home | ELevatious-Pay</title>
-        <link rel="stylesheet" href="./asset/css/hom211.css">
+        <link rel="icon" href="./asset/Img/reference.png">
+        <link rel="stylesheet" href="./asset/css/mercy.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -19,7 +47,7 @@ require './include/config.php';
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-nav">
-        <a class="navbar-brand text-light " href="#">
+        <a class="navbar-brand text-light " href="index.php">
             <div class="eeee">
                 ELEVATIOUS PAY
             </div>
@@ -28,31 +56,33 @@ require './include/config.php';
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-                <ul class=" navbar-nav ml-auto">
-                    <li class="nav-item active p-2">
-                        <a href="home" class="nav_col nav-link">Home</a>
-                    </li>
-                    <li class="nav-item p-2 ">
-                        <a href="#faq" class="nav_col nav-link" >FAQ</a>
-                    </li>
-                    <li class="nav-item p-2 ">
-                        <a href="contact" class="nav_col nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item p-2  cta">
-                        <a href="register" class="nav_col nav-link">
-                            <span>Get started</span>
-                        </a>
-                    </li>
-                </ul>
-            
+
+            <ul class=" navbar-nav ml-auto">
+                <li class="nav-item active p-2">
+                    <a href="index.php" class="nav_col nav-link">Home</a>
+                </li>
+                <li class="nav-item active p-2">
+                    <a href="" class="nav_cool nav-link">FAQ</a>
+                </li>
+                <li class="nav-item active p-2">
+
+                    <a href="" class="nav_cool nav-link">Contact</a>
+                </li>
+                <li class="nav-item active p-2">
+                    <a href="" class="nav_cool nav-link">
+                        <span>Get started</span>
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
     </nav>
 
     <div class="container-fluid bg-home ">
         <div class="row">
             <div class="col-md-7 col-12">
-                <img src="./asset/img/home.svg" class="home_img_svg">
+                <img src="./asset/img/home.svg" class="home_img_svg" title="ELevatious Home Image" alt="ELevatious Home Image">
             </div>
             <div class="col-md-5 col-12">
                 <div class="container bg-light bd_head">
@@ -128,14 +158,14 @@ require './include/config.php';
                 <h2 class="head_section"> PAY-AS-YOU-GO </h2>
                 <!-- I used head_section_text  -->
                 <p class="add_section_text mb-3"> Let’s Make Data Available Quickly for Your Urgent Need! Receive Value in Just a Few Clicks Without Registering! (You May Have to Register and Upgrade Your Account for Cheaper Plans)</p>
-                <button class="btn check_out px-4 py-3">
+                <p class="btn check_out ">
                     Check Out
-                </button>
+                </p>
             </div>
             <div class="col-md-6 col-12 text-center">
                 <h2 class="head_section"> AIRTIME TO CASH </h2>
                 <p class="add_section_text mb-3"> Were you just gifted airtime by a friend; or you had an erroneous excess airtime recharge from your bank? ELEVATIOUS PAY has made it possible to conveniently convert airtime to cash and pay bills with airtime.</p>
-                <button class="btn check_out px-4 py-3">
+                <button class="btn check_out">
                     Check for More
                 </button>
             </div>
@@ -151,27 +181,27 @@ require './include/config.php';
         <div class="row">
             <div class="col-md-4 col-12 text-center">
                 <div class="airt mb-5">
-                    <img src="./asset/img/logo.png" alt="LOGO TESTUNG" height="100px">
-                    <div class="mt-3">
-                        <h3 class="e_pay">AIRTIME AND DATA</h3>
+                    <img src="./asset/img/logo.png" alt="LOGO TESTiNG" title="UNIFY LOGO" height="100px">
+                    <div class="">
+                        <h3 class="mt-4 our_services_text">AIRTIME AND DATA</h3>
                         <p class="add_services"> Maximize Your Earnings: <br> Get 4% Cashback on Every <br> Airtime & Data Top Up!</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-12 text-center mt-5">
-                <div class="airt mb-5">
+                <div class="airt cable mb-5">
                     <img src="./asset/img/logo.png" alt="LOGO TESTUNG" height="100px">
-                    <div class="mt-3">
-                        <h3 class="e_pay">CABLE TV SUBSCRIBITIONS</h3>
+                    <div class="">
+                        <h3 class="mt-4 our_services_text">CABLE TV SUBSCRIBITIONS</h3>
                         <p class="add_services">Never Miss a Moment: Instantly<br>Activate Your Favorite TV Channels!<br>Enjoy Exclusive Discounts on GOTV,<br>Startimes, DSTV, and More!</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-12 text-center mt-5">
-                <div class="airt mb-5 mt-5">
+                <div class="airt utility ">
                     <img src="./asset/img/logo.png" alt="LOGO TESTUNG" height="100px">
                     <div class="mt-3">
-                        <h3 class="e_pay">UTILITY PAYMENTS</h3>
+                        <h3 class="mt-4 our_services_text">UTILITY PAYMENTS</h3>
                         <p class="add_services"> "Stay Juiced: Instantly Recharge <br> for Electricity Token Activation <br> and Never Lose Power!" </p>
                     </div>
                 </div>
@@ -179,21 +209,96 @@ require './include/config.php';
         </div>
     </div>
 
+    <div class="container aa">
+        <div class="row">
+            <div class="col-md-6 col-12 ">
+                <h3 class="trust"> why user trust us </h3>
+
+                <div class="mb-5">
+                    <ul>
+                        <li>
+                            <p> Amazing User Experience Upvote </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Swift Customer Service Response </p>
+                        </li>
+                        <li>
+                            <p> Amazing User Experience Upvote </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Swift Customer Service Response </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Swift Customer Service Response </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <img  class="mobile_img" src="asset/img/mobile_interface.png" alt="Mobile Interface" title="Mobile Interface">
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-12">
-                <h3> Frequently Asked Questions </h3>
+                <h3 class="fre_ask"> Frequently Asked Questions </h3>
             </div>
             <div class="col-md-6 col-12">
-                <img class="mb-5" src="./asset/img/contant-us.jpg" height="500" width="500">
-                <!-- <img src="./asset/img/about-2.jpg" height="500" width="500">  -->
+                <img class="mb-5 faq" src="./asset/img/contant-us.jpg" height="450" width="500">
             </div>
             <div class="col-md-6 col-12">
-                <p> Here is a list of FAQs that can help you quickly navigate your way through the Elevatious Pay </p>
+                <p class="fre_add"> Here is a list of FAQs that can help you quickly navigate your way through the Elevatious Pay </p>
+
+                <div class="mb-5">
+                    <ul>
+                        <li>
+                            <p> Amazing User Experience Upvote </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Amazing User Experience Upvote </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Swift Customer Service Response </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Swift Customer Service Response </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                        <li>
+                            <p> Swift Customer Service Response </p>
+                        </li>
+                        <li>
+                            <p> Service Provision </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+    
     <?php
     include_once("./footer.php");
     ?>
