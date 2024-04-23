@@ -10,7 +10,7 @@
     height: 3px;
     width: 100%;
     border-radius: 10px;
-    background: rgb(100, 81, 207);
+    background: rgba(34, 104, 244, 0.886);
     left: 0;
     bottom: 0;
     transform: scaleX(0);
@@ -91,3 +91,7 @@ ul{
     font-weight: bold;
     font-size: px;
 }
+
+/* .lois{
+    
+} */

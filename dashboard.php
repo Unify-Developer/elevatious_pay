@@ -12,7 +12,7 @@ require './include/config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Dashboard 3</title>
+    <title>Dashboard | Elevatious Pay</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -80,18 +80,18 @@ require './include/config.php';
 
                 <hr>
 
-                <ul>
+                <ul  class="lois">
                     <!-- class="" style="margin-right: 30px;" -->
                     <li>
                         <div class="container-fluid   "
-                            style="height: 160px; padding: 10px; background-color: rgb(133, 158, 248); border-radius: 8px; margin-bottom: 10px;">
+                            style="height: 160px; padding: 10px; background-color:  rgba(34, 104, 244, 0.886); border-radius: 8px; margin-bottom: 10px;">
                             <h2 class="text-white"> Hi, Vincent!</h2>
                         </div>
                     </li>
 
                     <li>
 
-                        <h3 class="mt-4 " style="font-family: monospace;"><u>Quick Links</u></h3>
+                        <h3 class="mt-4 " style="font-family: monospace; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Quick Links</u></h3>
                         <div class="row">
                             <div class="col-xl-3 col-md-6 mb-4 pt-4">
                                 <div class="card border-left-success shadow py-2">
@@ -141,7 +141,7 @@ require './include/config.php';
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-center"> WAEC PIN</P>
+                                <p class="text-center"> WAEC/NECO PIN</P>
                             </div>
 
                         </div>
@@ -149,21 +149,11 @@ require './include/config.php';
                     </li>
             
             </ul>
-
+  
             <hr>
 
-
-
-            <!-- <div class="ml-auto ">
-                        <ul>
-                            
-                            <li>
-                                
-                            </li>
-                        </ul>
-                    </div> -->
             <ul>
-                <h3 class="mt-4" style="font-family: monospace; text-align: center;"><u>Other Services</u></h3>
+                <h3 class="mt-4" style="font-family: monospace; text-align: center; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Other Services</u></h3>
                 <div class="row">
 
                     <!-- Earnings (Monthly) Card Example -->
@@ -311,7 +301,7 @@ require './include/config.php';
                     data-accordion="false">
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="dashboard.php" class="nav-link">
                             <div class="text-light">
 
                                 <i class="nav-icon  fa-solid fa-house"></i>
@@ -323,7 +313,7 @@ require './include/config.php';
                         </a>
                     </li>
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
@@ -332,7 +322,7 @@ require './include/config.php';
                         </a>
                     </li>
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-list-check"></i>
                                 <p> Transactions</p>
@@ -341,7 +331,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <p> Our Services </p>
@@ -350,7 +340,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                 <p> Settings </p>
@@ -360,7 +350,7 @@ require './include/config.php';
                     <hr>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
@@ -370,7 +360,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
@@ -380,7 +370,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
@@ -390,7 +380,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
@@ -400,7 +390,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
@@ -410,7 +400,7 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-side">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
                                 <i class="fa-solid fa-wallet"></i>
                                 <p> Add Fund
