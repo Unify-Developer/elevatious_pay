@@ -24,6 +24,8 @@ require './include/config.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard | Elevatious Pay</title>
 
+    <link rel="icon" href="./asset/img/logo.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -49,12 +51,9 @@ require './include/config.php';
                             <a class="nav-push" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </div>
                     </li>
-
-
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-
                     <li class="nav-item dropdown no-arrow ml-auto ">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
