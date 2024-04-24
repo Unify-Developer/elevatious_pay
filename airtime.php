@@ -81,17 +81,17 @@ require './include/config.php';
 
                 <ul>
                     <li>
-                        <form action="" style="display: flex; justify-content: space-between;">
-                            <div>
+                        <form action="" style="display: block; padding: 20px;">
+                            <div class="" style="margin-bottom: 20px; justify-content: space-between;">
                                 <h6>Network</h6>
                                 <button class="">MTN</button>
                                 <button class="">AIRTEL</button>
                                 <button class="">GLO</button>
                                 <button class="">9Mobile</button>
                             </div>    
-                            <div>
+                            <div class="" style="margin-bottom: 20px;">
                                 <h6>Network</h6>
-                                <select>
+                                <select >
                                     <option value="">MTN</option>
                                     <option value="">AIRTEL</option>
                                     <option value="">GLO</option>
@@ -99,7 +99,7 @@ require './include/config.php';
                                 
                                 </select>
                             </div>
-                            <div>
+                            <div class="" style="margin-bottom: 20px;">
                                 <h6>Phone Number</h6>
                                 <input type="number" name="phone_number" size="20" maxlength="30">
                             </div>    

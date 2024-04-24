@@ -99,60 +99,90 @@ require './include/config.php';
 
                     <li>
 
-                        <h3 class="mt-4 " style="font-family: monospace; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Quick Links</u></h3>
+                        <h3 class="mt-4 quick " style="font-family: monospace; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Quick Links</u></h3>
                         <div class="row">
                             <div class="col-md-3 col-6 mb-4 pt-4">
+                                <a href="#"  >
                                 <div class="card border-left-success shadow py-2">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Contact</div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
+                                            <div class="col-auto " style="">
+                                                <i class="fas wifi fa-phone fa-2x text-gray-300"></i>
+                                            </div>
+                                            <!-- <div class="mt-3">
+                                               
+                                            </div> -->
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                </a>
+                                <!-- <p class="text-center ml-3"> Airtime </p> -->
+                            </div>
+                            <div class="col-md-3 col-6 mb-4 pt-4">
+                            <a href="airtime.php">
+                                <div class="card border-left-info shadow py-2">
+                                    <div class="card-body bbbb">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Airtime </div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas data fa-mobile fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!-- <p class="text-center"> Data Subscription </p> -->
+                            </div>
+
+                            <div class="col-md-3 vinc col-6 mb-4 pt-4">
+                            <a href="#">
+                                <div class="card border-left-warning shadow  py-2">
+
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Data </div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
                                             <div class="col-auto">
                                                 <i class="fas fa-wifi fa-2x text-gray-300"></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-center"> Airtime </p>
+                                </a>
+                                <!-- <p class="text-center">Electricity bills </p> -->
                             </div>
-                            <div class="col-md-3 col-6 mb-4 pt-4">
-                                <div class="card border-left-info shadow py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <i class="fas fa-arrow-alt-circle-down fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-center"> Data Subscription </P>
-                            </div>
-
-                            <div class="col-md-3 col-6 mb-4 pt-4">
-                                <div class="card border-left-warning shadow  py-2">
-
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-center">Electricity bills </P>
-                            </div>
-                            <div class="col-md-3 col-6 mb-4 pt-4">
+                            <div class="col-md-3 vinc col-6 mb-4 pt-4">
+                            <a href="#" >
                                 <div class="card border-left-primary shadow py-2">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Activity</div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
                                             <div class="col-auto">
                                                 <i class="fas fa-list fa-2x text-gray-300"></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-center"> WAEC/NECO PIN</P>
+                                </a>
+                                <!-- <p class="text-center"> WAEC/NECO PIN</p> -->
                             </div>
 
                         </div>
+                        
                         
                     </li>
             
@@ -161,211 +191,91 @@ require './include/config.php';
             <hr>
 
             <ul>
-                <h3 class="mt-4" style="font-family: monospace; text-align: center; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Other Services</u></h3>
+                <h3 class="mt-4 quick" style="font-family: monospace; text-align: center; color: rgba(34, 104, 244, 0.886); font-weight: bold; "><u>Other Services</u></h3>
                 <div class="row">
 
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-md-3 col-6 mb-4 pt-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                    </div>
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            <!-- Earnings (Monthly) -->
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            <!-- $40,000 -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-md-3 col-6 mb-4 pt-4">
-                        <div class="card border-left-success shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                    </div>
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            <!-- Earnings (Annual) -->
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            <!-- $215,000 -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-md-3 col-6 mb-4 pt-4">
-                        <div class="card border-left-info shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                    </div>
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                            <!-- Tasks -->
-                                        </div>
+                <div class="col-md-3 col-6 mb-4 pt-4">
+                                <a href="#"  >
+                                <div class="card border-left-success shadow py-2">
+                                    <div class="card-body">
                                         <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1"> Exam Pins</div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
+                                            <div class="col-auto " style="">
+                                                <i class="fas pin fa-graduation-cap fa-2x text-gray-300"></i>
+                                            </div>
+                                            <!-- <div class="mt-3">
+                                               
+                                            </div> -->
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                </a>
+                                <!-- <p class="text-center ml-3"> Airtime </p> -->
+                            </div>
+                            <div class="col-md-3 col-6 mb-4 pt-4">
+                            <a href="#">
+                                <div class="card border-left-info shadow py-2">
+                                    <div class="card-body bbbb">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">Cable TV</div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
                                             <div class="col-auto">
-                                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                    <!-- 50% -->
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <!-- <div class="progress progress-sm mr-2">
-                                            <div class="progress-bar bg-info" role="progressbar"
-                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
-                                        </div> -->
-                                                </div>
+                                                <i class="fas tv fa-tv fa-2x text-gray-300"></i>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
+                                </a>
+                                <!-- <p class="text-center"> Data Subscription </p> -->
                             </div>
-                        </div>
 
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-md-3 col-6 mb-4 pt-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                <!-- Pending Requests -->
+                            <div class="col-md-3 vinc col-6 mb-4 pt-4">
+                            <a href="#">
+                                <div class="card border-left-warning shadow  py-2">
+
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs elect font-weight-bold text-primary text-uppercase mb-1">Electricity bills </div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
                                             </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <!-- 18 -->
+                                            <div class="col-auto">
+                                                <i class="fas bills fa-plug-circle-check fa-2x text-gray-300"></i>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
+                                </a>
+                                <!-- <p class="text-center">Electricity bills </p> -->
                             </div>
-                        </div>
+                            <div class="col-md-3 vinc col-6 mb-4 pt-4">
+                            <a href="#" >
+                                <div class="card border-left-primary shadow py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1"> Rewards</div>
+                                                <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-gift fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!-- <p class="text-center"> WAEC/NECO PIN</p> -->
+                            </div>
 
                     </div>
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-md-3 col-6 mb-4 pt-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                <!-- Earnings (Monthly) -->
-                                            </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <!-- $40,000 -->
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-md-3 col-6 mb-4 pt-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                <!-- Earnings (Annual) -->
-                                            </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <!-- $215,000 -->
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-md-3 col-6 mb-4 pt-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                <!-- Tasks -->
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                        <!-- 50% -->
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <!-- <div class="progress progress-sm mr-2">
-                                            <div class="progress-bar bg-info" role="progressbar"
-                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
-                                        </div> -->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-md-3 col-6 mb-4 pt-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                <!-- Pending Requests -->
-                                            </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <!-- 18 -->
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                   
 
                 </ul>
 
@@ -385,7 +295,7 @@ require './include/config.php';
 
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="./asset/img/eye.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="./asset/img/logo.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
 
@@ -394,7 +304,7 @@ require './include/config.php';
                     </div>
                 </div>
 
-                <div class="form-inline">
+                <!-- <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
                         <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                         <div class="input-group-append">
@@ -403,13 +313,13 @@ require './include/config.php';
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="dashboard.php" class="nav-link">
                                 <div class="text-light">
 
                                     <i class="nav-icon  fa-solid fa-house"></i>
@@ -421,7 +331,7 @@ require './include/config.php';
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -430,7 +340,7 @@ require './include/config.php';
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-list-check"></i>
                                     <p> Transactions</p>
@@ -439,7 +349,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-chart-simple"></i>
                                     <p> Our Services </p>
@@ -448,7 +358,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     <p> Settings </p>
@@ -458,7 +368,7 @@ require './include/config.php';
                         <hr>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -468,7 +378,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -478,7 +388,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -488,7 +398,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -498,7 +408,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund
@@ -508,7 +418,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <div class="text-light">
                                     <i class="fa-solid fa-wallet"></i>
                                     <p> Add Fund

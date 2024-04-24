@@ -50,6 +50,7 @@
 
 .nav-link{
     font-weight: bold;
+    
 }
 
 /* .hhhh::after {
@@ -95,12 +96,60 @@ li{
     font-size: px;
 }
 
-<<<<<<< HEAD
-/* .lois{
-    
-} */
-=======
 .quick_links{
     height: 80px;
 }
->>>>>>> 0b2030ba9202e82243bf46d9ad8b56993eacc6ea
+
+/* .main-list{
+    list-style-type: none !important;  
+} */
+
+
+@media screen  and (max-width: 992px) {
+    .wifi {
+        width: 10px !important;
+        position: relative;
+        right: 17px;
+    }
+
+    .data{
+        width: 10px !important;
+        position: relative;
+        right: 24px;
+        
+    }
+
+    .elect{
+        font-size: 10px !important; 
+    }
+
+    .exam{
+        font-size: 10px !important;
+    }
+
+    .vinc{
+        margin-top: -20px;
+    }
+
+    .quick{
+        font-size: 17px;
+    }
+
+    .pin{
+        width: 10px !important;
+        position: relative;
+        right: 14px; 
+    }
+
+    .tv{
+        width: 10px !important;
+        position: relative;
+        right: 20px;
+    }
+
+    .bills{
+        width: 10px !important;
+        position: relative;
+        right: 16px;
+    }
+}
