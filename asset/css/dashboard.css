@@ -53,25 +53,6 @@
     
 }
 
-/* .hhhh::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: transform .4s ease-in-out;
-    transform-origin: left;
-} */
-/* 
-.hhhh:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
-} */
-
 ul{
     list-style-type: none !important;
 }
@@ -84,11 +65,6 @@ li{
 
 }
 
-/* .info-text{
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 30px;
-} */
 
 .infovi{
     font-family:'Courier New', Courier, monospace;
@@ -99,11 +75,53 @@ li{
 .quick_links{
     height: 80px;
 }
-<<<<<<< HEAD
 
 /* .main-list{
     list-style-type: none !important;  
 } */
+
+.phone_number{
+    width: 50% !important;
+    height: 40px !important;
+}
+
+.amount{
+    width: 140px;
+}
+
+.amt{
+    margin-left: 100px;
+}
+
+.seee{
+    width: 35%;
+}
+
+.airt_airtime{
+    box-shadow: 2px 2px 15px #4e73df;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    right: 25px;
+    padding: 20px;
+    
+}
+
+.class-buttons{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+.buttonss{
+    display: inline-flex;
+}
+
+.fff{
+    padding: 5px;
+}
 
 
 @media screen  and (max-width: 992px) {
@@ -153,6 +171,58 @@ li{
         position: relative;
         right: 16px;
     }
+
+    .fafaf{
+        /* width: 100px !important; */
+        position: relative;
+        right: 65px;
+    }
+
+    .phone_number{
+        width: 100% !important;
+    }
+
+    .airt_airtime{
+        margin-left: 0px;
+        padding: 30px;
+    }
+
+    .vincent_airt{
+        display:    block !important;
+    }
+
+    .amt{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .netw_ork{
+        height: 0% !important;
+        width: 0% !important;
+    }
+
+    .seee{
+        height: 0px;
+        width: 0px;
+    }
+
+    .buttonss{
+        position: relative;
+        right: 24px;
+        display: inline-flex;
+    }
+
+    .class-buttons{
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .fff{
+        padding: 2px !important;
+        
+    }
+
+
+
 }
-=======
->>>>>>> 73fabb1a6a40305427567fc64955a4f684be62b3

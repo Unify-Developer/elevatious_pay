@@ -81,187 +81,220 @@ require './include/config.php';
 
                 <ul>
                     <li>
-                        <form action="" style="display: block; padding: 20px;">
-                            <div class="" style="margin-bottom: 20px; justify-content: space-between;">
+                        <div class="airt_airtime">
+                            <div class="class-buttons">
+                            <div class="vincent_airt" style="display: flex;">
+                                <div class="buttonss" >
+                                    <div class="fff">
+                                        <button type="button" class="mtn btn btn-warning ">MTN</button>
+                                    </div>
+                                    <div class="fff">
+                                        <button type="button" class="airtel btn btn-danger">AIRTEL</button>
+                                    </div>
+                                    <div  class="fff">
+                                       <button type="button" class="glo btn btn-success">GLO</button>
+                                    </div>
+                                    <div class="fff">
+                                        <button type="button" class="9mobile btn btn-secondary" >9Mobile</button>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="amt">
+                                        <h6>Amount</h6>
+                                        <input class="amount form-control" type="number" name="phone_number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="netw_ork mt-3">
                                 <h6>Network</h6>
-                                <button class="">MTN</button>
-                                <button class="">AIRTEL</button>
-                                <button class="">GLO</button>
-                                <button class="">9Mobile</button>
-                            </div>    
-                            <div class="" style="margin-bottom: 20px;">
-                                <h6>Network</h6>
-                                <select >
+                                <select class="seee">
                                     <option value="">MTN</option>
                                     <option value="">AIRTEL</option>
                                     <option value="">GLO</option>
                                     <option value="">9Mobile</option>
-                                
+
                                 </select>
                             </div>
-                            <div class="" style="margin-bottom: 20px;">
-                                <h6>Phone Number</h6>
-                                <input type="number" name="phone_number" size="20" maxlength="30">
-                            </div>    
-                        </form>
+                            <div class="">
+                                <div class="mt-4">
+                                    <h6>Phone Number</h6>
+                                    <input class="phone_number form-control" type="number" name="phone_number">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="mt-4">
+                                    <h6>Amount to pay </h6>
+                                    <!-- For the Amount not him to input it  -->
+                                    <!-- Remeber ooooooooooooooooooooooooooooooooooooooooooooo -->
+                                    <input class="phone_number form-control" type="number" name="phone_number">
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <button class="btn btn-primary">
+                                    <label for="">PROCEED</label>
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+
                     </li>
                 </ul>
 
-            
-            <!-- <footer class="Footer text-center">
-                &copy; Elevatious - Pay | Tech Net &reg; 2024
-            </footer> -->
-    </div>
 
-    </nav>
-    <!-- <div class="" style="display: block;">
+            <footer class="Footer text-center">
+                &copy; Elevatious - Pay | Tech Net &reg; 2024
+            </footer>
+            </div>
+
+        </nav>
+        <!-- <div class="" style="display: block;">
             
         </div> -->
 
 
-    <aside class="main-sidebar bg-primary sidebar-dark-primary elevation-4">
-        <div class="sidebar">
+        <aside class="main-sidebar bg-primary sidebar-dark-primary elevation-4">
+            <div class="sidebar">
 
-            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                <div class="image">
-                    <img src="./asset/img/eye.png" class="img-circle elevation-2" alt="User Image">
-                </div>
-                <div class="info">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="./asset/img/eye.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
 
-                    <!-- <a href="#" class="c text-white d-block ">Elevatious Pay </a> -->
-                    <p class="text-monospace  text-bold   " style="font-size: 17px;"> Elevatious Pay </p>
-                </div>
-            </div>
-
-            <div class="form-inline">
-                <div class="input-group" data-widget="sidebar-search">
-                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-sidebar">
-                            <i class="fas fa-search fa-fw"></i>
-                        </button>
+                        <!-- <a href="#" class="c text-white d-block ">Elevatious Pay </a> -->
+                        <p class="text-monospace  text-bold   " style="font-size: 17px;"> Elevatious Pay </p>
                     </div>
                 </div>
+
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+
+                        <li class="nav-side">
+                            <a href="dashboard.php" class="nav-link">
+                                <div class="text-light">
+
+                                    <i class="nav-icon  fa-solid fa-house"></i>
+                                    <p>
+                                        Home
+                                        <span class="right badge badge-danger">Main</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <p> Transactions</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <p> Our Services </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <p> Settings </p>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
             </div>
-
-            <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                    data-accordion="false">
-
-                    <li class="nav-side">
-                        <a href="dashboard.php" class="nav-link">
-                            <div class="text-light">
-
-                                <i class="nav-icon  fa-solid fa-house"></i>
-                                <p>
-                                    Home
-                                    <span class="right badge badge-danger">Main</span>
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-list-check"></i>
-                                <p> Transactions</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <p> Our Services </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                <p> Settings </p>
-                            </div>
-                        </a>
-                    </li>
-                    <hr>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-side">
-                        <a href="#" class="nav-link">
-                            <div class="text-light">
-                                <i class="fa-solid fa-wallet"></i>
-                                <p> Add Fund
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-
-            </nav>
-        </div>
-    </aside>
+        </aside>
     </div>
 
 
