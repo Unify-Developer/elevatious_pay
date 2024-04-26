@@ -196,14 +196,18 @@ li{
         margin-top: 20px;
     }
 
-    .netw_ork{
+    /* .netw_ork{
         height: 0% !important;
         width: 0% !important;
-    }
+    } */
 
-    .seee{
+    /* .seee{
         height: 0px;
         width: 0px;
+    } */
+
+    .netw_ork{
+        width: 700px;
     }
 
     .buttonss{

@@ -3,13 +3,13 @@ require './include/config.php';
 
 $msg = "";
 
-if (isset($_POST['login'])) {
-    $user_name = $_POST["user_name"];
+if (isset($_POST['loginaa'])) {
+    $username = $_POST["username"];
     $password = $_POST["password"];
 
 
-    $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name AND password = :password");
-    $sql->bindParam(':user_name', $user_name);
+    $sql = $conn->prepare("SELECT * FROM student WHERE username = :username AND password = :password");
+    $sql->bindParam(':username', $username);
     $sql->bindParam(':password', $password);
     $sql->execute();
 
@@ -38,7 +38,7 @@ if (isset($_POST['login'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Home | ELevatious-Pay</title>
         <link rel="icon" href="./asset/Img/reference.png">
-        <link rel="stylesheet" href="./asset/css/mercy.css">
+        <link rel="stylesheet" href="./asset/css/mercy11.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -108,8 +108,8 @@ if (isset($_POST['login'])) {
                             </label>
                         </div>
                         <div class="img_cent">
-                            <button name="login" class="submit btn_lg_bg btn w-50 mt-3">
-                                <a href class="btn_lg"> Login
+                            <button name="loginaa" class="submit btn_lg_bg btn w-50 mt-3">
+                                <a class="btn_lg"> Login
                                 </a>
                             </button>
                         </div>
@@ -244,7 +244,7 @@ if (isset($_POST['login'])) {
                 </div>
             </div>
             <div class="col-md-6 col-12">
-                <img  class="mobile_img" src="asset/img/mobile_interface.png" alt="Mobile Interface" title="Mobile Interface">
+                <img class="mobile_img" src="asset/img/mobile_interface.png" alt="Mobile Interface" title="Mobile Interface">
             </div>
         </div>
     </div>
@@ -298,7 +298,43 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 
-    
+    <!-- <div class="container-fluid footer mt-5">
+        <div class="row">
+            <div class="mt-3 col-6 col-md-3 mb-3">
+                <h5>Home</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">UNIFY</a></li>
+                </ul>
+            </div>
+
+            <div class="mt-3 col-6 col-md-3 mb-3">
+                <h5>Account</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sign Up</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Login</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order Status</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Track Your Order</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Book Fetch</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-6 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <p class="mt-3 text-center">&copy; Elevatious - Pay | Tech Net 2024 &reg; </p> -->
     <?php
     include_once("./footer.php");
     ?>

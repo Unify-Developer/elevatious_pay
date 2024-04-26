@@ -1,34 +1,35 @@
 <?php
-    require './include/config.php';
-    $msg = '';
 
-    if(isset($_POST['login'])){
-        // $email = $_POST['email'];
-        $user_name = $_POST['user_name'];
-        $password = $_POST['password'];
+require './include/config.php';
+$msg = '';
 
+if (isset($_POST['login'])) {
+    $user_name = $_POST['user_name'];
+    $password = $_POST['password'];
+
+    $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name");
+    $sql->bindParam(':user_name', $user_name);
+    $sql->execute();
+
+    if ($sql->rowCount() > 0) {
+        $result = $sql->fetch(PDO::FETCH_ASSOC);
         
-       
-        $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name AND password = :password");
-        $sql->bindParam(':user_name', $user_name);
-        $sql->bindParam(':password', $password);
-        $sql->execute();
-        
-    
-    if ($sql->rowCount() >= 0 ) {
-
-        $result = $sql->fetch( PDO::FETCH_ASSOC );
-
-        // $msg = 'Welcome '. $result[ 'full_name' ];
-
-            header( 'Location: dashboard.php' );
+        // Verify the input password against the hashed password stored in the database
+        if (password_verify($password, $result['password'])) {
+            // Password is correct, redirect to dashboard
+            header('Location: dashboard.php');
+            exit();
+        } else {
+            $msg = "Invalid Password";
+        }
     } else {
-        $msg = 'Invalid login Details';
+        $msg = "User not found";
     }
-    
-    };
+}
+?>
 
- ?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -43,8 +44,11 @@
 </head>
 
 <body>
-    <div class="row">
-
+    <div class="container">
+        <p><span style="color: red; ">
+                <?= $msg ?>
+            </span>
+        </p>
     </div>
     <div class="container t1_top">
         <div class="text-center ">
@@ -62,7 +66,7 @@
             <form action="" method='post'>
                 <div class="form-group">
                     <label class="label"> Username </label>
-                    <input type="text" name="username" class="form-control" placeholder="Username">
+                    <input type="text" name="user_name" class="form-control" placeholder="username">
                 </div>
                 <!-- <div class="form-group">
                     <label> Email Address </label>
@@ -70,8 +74,7 @@
                 </div> -->
                 <div class="form-group">
                     <label class="label" for=""> Password </label>
-                    <input type="password" class="form-control" placeholder="Password" name="password"  
-                    pattern=".{8,}">
+                    <input type="password" class="form-control" placeholder="Password" name="password" pattern=".{8,}">
                 </div>
                 <div class="row chk_fgt">
                     <div class="col-md-6 col-6 checkbox">

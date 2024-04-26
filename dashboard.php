@@ -2,10 +2,10 @@
 
 // session_start();
 
-// Check if the user is logged in
-// if (!isset($_SESSION['user_name'])) {
-//     header('Location: login.php');
-//     exit();
+
+// if(!$_SESSION['username']){
+//     header("location: ./login.php");
+//     return;
 // }
 
 // Display success message
@@ -109,7 +109,7 @@ require './include/config.php';
                                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Contact</div>
                                                 <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
                                             </div>
-                                            <div class="col-auto " style="">
+                                            <div class="col-auto " >
                                                 <i class="fas wifi fa-phone fa-2x text-gray-300"></i>
                                             </div>
                                             <!-- <div class="mt-3">
@@ -202,7 +202,7 @@ require './include/config.php';
                                                 <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1"> Exam Pins</div>
                                                 <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
                                             </div>
-                                            <div class="col-auto " style="">
+                                            <div class="col-auto ">
                                                 <i class="fas pin fa-graduation-cap fa-2x text-gray-300"></i>
                                             </div>
                                             <!-- <div class="mt-3">
