@@ -12,7 +12,7 @@ require './include/config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airtime | Elevatious Pay</title>
+    <title>Data | Elevatious Pay</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -43,7 +43,7 @@ require './include/config.php';
 
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Airtime Subscription</a>
+                        <a class="nav-link" href="#">Data Subscription</a>
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
@@ -83,7 +83,7 @@ require './include/config.php';
                     <li>
                         <div class="airt_airtime">
                             <div class="div_buy">
-                                <h4 class="buy_airtime"> Buy Airtime <i class="fas fa-laugh-wink"></i> </h4>
+                                <h4 class="buy_airtime"> Buy Data <i class="fas fa-laugh-wink"></i> </h4>
                                 <hr>
                             </div>
                             <div class="class-buttons">
@@ -111,7 +111,7 @@ require './include/config.php';
                             </div>
                             <div class="netw_ork mt-3">
                                 <h6>Network</h6>
-                                <select class="seee">
+                                <select class="seee" placeholder="select ">
                                     <option value="">MTN</option>
                                     <option value="">AIRTEL</option>
                                     <option value="">GLO</option>
@@ -119,6 +119,35 @@ require './include/config.php';
 
                                 </select>
                             </div>
+
+                            <div class="netw_ork mt-3">
+                                <h6>Data Type</h6>
+                                <select class="seee" placeholder="select ">
+                                    <option value="">SMe Data Subscription</option>
+                                    <option value="">Corperate Data Subscription </option>
+                                    <option value="">Global Data Subscription</option>
+                                    
+                                </select>
+                            </div>
+
+                            <div class="netw_ork mt-3">
+                                <h6>Data Plan</h6>
+                                <select class="seee" placeholder="select ">
+                                    <option value="">500MB - data plan</option>
+                                    <option value="">1Gig - data plan</option>
+                                    <option value="">1.5Gig - data plan</option>
+                                    <option value="">2Gig - data plan</option>
+                                    <option value="">5Gig - data plan</option>
+                                    <option value="">10Gig - data plan</option>
+                                    <option value="">12Gig - data plan</option>
+                                    <option value="">15Gig - data plan</option>
+                                    <option value="">20Gig - data plan</option>
+                                    <option value="">25Gig - data plan</option>
+                                    <option value="">30Gig - data plan</option>
+
+                                </select>
+                            </div>
+
                             <div class="">
                                 <div class="mt-4">
                                     <h6>Phone Number</h6>
@@ -135,7 +164,7 @@ require './include/config.php';
                             </div>
                             <div class="mt-5">
                                 <button class="btn btn-primary">
-                                    <label for="">PROCEED</label>
+                                    <label for="">Buy Data</label>
                                 </button>
                             </div>
                             </div>

@@ -143,7 +143,7 @@ require './include/config.php';
                             </div>
 
                             <div class="col-md-3 vinc col-6 mb-4 pt-4">
-                            <a href="#">
+                            <a href="data.php">
                                 <div class="card border-left-warning shadow  py-2">
 
                                     <div class="card-body">
