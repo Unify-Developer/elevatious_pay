@@ -23,6 +23,35 @@
     position: relative;
     left: -10px;
 }
+<<<<<<< HEAD:asset/css/dashboard111.css
+=======
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/* .no-arrow::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(100, 81, 207);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+    
+} */
+/* 
+.no-arrow:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+} */
+
+
+>>>>>>> 31ac8e43f133be7c0ebd563a83d1370577fdc6c6:asset/css/dashboard.css
 .push {
     padding-top: 15px;
     margin-right: 30px;
@@ -113,12 +142,135 @@ li {
     color: #4e73df;
 }
 
+<<<<<<< HEAD:asset/css/dashboard111.css
 
 /* .div_buy{
     
 } */
 
 
+=======
+.contact {
+    display: flex;
+    padding: 10px;
+}
+
+.con_icon {
+    color: #4e73df;
+    padding: 2px;
+    padding-top: 3px;
+}
+
+.icon_cal {
+    margin-left: 15px;
+}
+
+.icon_call {
+    position: relative;
+    left: 135px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+.icon_sup {
+    margin-left: 15px;
+}
+
+.icon_supp {
+    position: relative;
+    left: 100px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+.icon_what {
+    margin-left: 15px;
+}
+
+.icon_whats {
+    position: relative;
+    left: 138px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+.icon_whatsg {
+    position: relative;
+    left: 173px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+
+.icon_face {
+    margin-left: 15px;
+}
+
+.icon_faceb {
+    position: relative;
+    left: 105px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+.icon_ins {
+    margin-left: 15px;
+}
+
+.icon_inst {
+    position: relative;
+    left: 155px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+.icon_twi {
+    margin-left: 15px;
+}
+
+.icon_twit {
+    position: relative;
+    left: 113px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+.icon_lin {
+    margin-left: 15px;
+}
+
+.icon_link {
+    position: relative;
+    left: 164px;
+    height: 30px;
+    background-color: #4e73df;
+    border: 2px solid #4e73df;
+    border-radius: 3px;
+    color: white;
+}
+
+>>>>>>> 31ac8e43f133be7c0ebd563a83d1370577fdc6c6:asset/css/dashboard.css
 @media screen and (max-width: 992px) {
     .wifi {
         width: 10px !important;
@@ -191,6 +343,7 @@ li {
         margin-top: 20px;
     }
 
+<<<<<<< HEAD:asset/css/dashboard111.css
     /* .netw_ork{
         height: 0% !important;
         width: 0% !important;
@@ -201,6 +354,8 @@ li {
         width: 0px;
     } */
 
+=======
+>>>>>>> 31ac8e43f133be7c0ebd563a83d1370577fdc6c6:asset/css/dashboard.css
     .netw_ork {
         width: 700px;
     }
@@ -220,6 +375,58 @@ li {
     .fff {
         padding: 2px !important;
 
+<<<<<<< HEAD:asset/css/dashboard111.css
+=======
+    }
+
+    .contact {
+        margin-left: -30px;
+    }
+
+    .icon_call {
+        position: relative;
+        left: 100px;
+    }    
+    
+    .icon_supp {
+        position: relative;
+        left: 4px;
+    }
+    
+    .icon_whats {
+        position: relative;
+        left: 105px;
+        height: 30px
+    }
+    
+    .icon_whatsg {
+        position: relative;
+        left: 76px;
+    }
+
+    .icon_faceb {
+        position: relative;
+        left: 65px;
+    }
+    
+    .icon_inst {
+        position: relative;
+        left: 58px;
+    }
+    
+    .icon_twit {
+        position: relative;
+        left: 73px;
+    }
+    
+    .icon_link {
+        position: relative;
+        left: 67px;
+    }
+
+    .text_area{
+        width: 100%;
+>>>>>>> 31ac8e43f133be7c0ebd563a83d1370577fdc6c6:asset/css/dashboard.css
     }
 
     .hi_username {
@@ -233,7 +440,10 @@ li {
         bottom: 50px;
     }
 
+<<<<<<< HEAD:asset/css/dashboard111.css
     .user_hi{
         font-family: monospace;
     }
+=======
+>>>>>>> 31ac8e43f133be7c0ebd563a83d1370577fdc6c6:asset/css/dashboard.css
 }
