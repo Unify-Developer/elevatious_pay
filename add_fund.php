@@ -22,7 +22,7 @@ require './include/config.php';
 
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
-    <link rel="stylesheet" href="./asset/css/dash.css">
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
 
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
@@ -97,7 +97,7 @@ require './include/config.php';
 
 
 
-    <footer class="Footer text-center" style="margin-top: 100px; margin-left: 210px;">
+    <footer class="Footer text-center" >
         &copy; Elevatious - Pay | Tech Net &reg; 2024
     </footer>
     </div>

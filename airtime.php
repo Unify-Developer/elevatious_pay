@@ -108,8 +108,7 @@ require './include/config.php';
                                 </div>
                                 <div class="netw_ork mt-3">
                                     <h6>Network</h6>
-                                    <select class="seee">
-                                        <option value="" selected>Select Network</option>
+                                    <select class="seee w-50 form-control">
                                         <option value="">MTN</option>
                                         <option value="">AIRTEL</option>
                                         <option value="">GLO</option>
@@ -153,6 +152,7 @@ require './include/config.php';
             
         </div> -->
 
+
         <aside class="main-sidebar sidebar-dark-primary" style="background-color: #3b79f5;">
             <div class="sidebar">
 
@@ -194,14 +194,14 @@ require './include/config.php';
                             <a href="add_fund.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-wallet"></i>
-                                    <p>
+                                    <p> 
                                         Add Fund
                                     </p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="airtime.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas data fa-mobile"></i>
                                     <p> Airtime </p>
@@ -211,7 +211,7 @@ require './include/config.php';
 
 
                         <li class="nav-side">
-                            <a href="data.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas wifi fa-wifi"></i>
                                     <p> Data </p>
@@ -219,7 +219,7 @@ require './include/config.php';
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="activity.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-list-check"></i>
                                     <!-- <i class="fa-solid fa-chart-simple"></i> -->
@@ -230,7 +230,7 @@ require './include/config.php';
                         <hr>
 
                         <li class="nav-side">
-                            <a href="contactUs.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-phone"></i>
                                     <p> Contact
@@ -240,7 +240,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="exam_pins.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas pin fa-graduation-cap"></i>
                                     <p> Exam Pins
@@ -250,7 +250,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="cable_tv.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas tv fa-tv"></i>
                                     <p> Cable Tv
@@ -260,7 +260,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="electricity.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas bills fa-plug-circle-check"></i>
                                     <p> Electricity Bills
@@ -270,7 +270,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="reward.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas fa-gift"></i>
                                     <p> Rewards
@@ -278,7 +278,18 @@ require './include/config.php';
                                 </div>
                             </a>
                         </li>
+
+                        <!-- <li class="nav-side">
+                            <a href="#" class="nav-link">
+                                <div class="text-light">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p> Add Fund
+                                    </p>
+                                </div>
+                            </a>
+                        </li> -->
                     </ul>
+
                 </nav>
             </div>
         </aside>
