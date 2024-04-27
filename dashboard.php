@@ -32,7 +32,7 @@ require './include/config.php';
 
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
-    <link rel="stylesheet" href="./asset/css/dashboard111.css">
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
 
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
@@ -48,20 +48,17 @@ require './include/config.php';
 
                     <li class="nav-pushmenu">
                         <div class="push">
-                            <a class="nav-push" data-widget="pushmenu" href="#" role="button"><i
-                                    class="fas fa-bars"></i></a>
+                            <a class="nav-push" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </div>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown no-arrow ml-auto ">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 bold">Vincent
-                                TV</span>
-                            <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg"
-                                style="height: 30px; width: 30px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 bold"> Seun
+                            </span>
+                            <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg" style="height: 30px; width: 30px;">
                         </a>
                         <div class="dropdown-menu dropdown-menu shadow animated--grow-in">
                             <a class="dropdown-item" href="#">
@@ -77,8 +74,7 @@ require './include/config.php';
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal" href="./logout.php"
-                                class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal" href="./logout.php" class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400">
                                 Logout
                             </a>
                         </div>
@@ -95,19 +91,22 @@ require './include/config.php';
                         <div class="container-fluid hi_username ">
                             <div class="row">
                                 <div class="col-md-12 col-md-12">
-                                    <h2 class="text-white user_hi"> Hi, Vincent!</h2>
+                                    <h2 class="text-white user_hi"> Hi, SEUN!</h2>
                                 </div>
                                 <div class="col-md-12 col-12 mt-4" style="display: inline-flex;">
                                     <i class="m-1 text-white fa-solid fa-wallet"></i>
-                                    <a href="">
-                                        <p class="text-white">Balance  &nbsp;&nbsp;&nbsp; $0.00</p>
+                                    <a href="" class="bal">
+                                        <p class="text-bold text-white"> Balance <?php  ?> </p>
                                     </a>
+
                                 </div>
                             </div>
-                            <div class="add_fund_dash " style="display: inline-flex;">
-                                <i class="m-3 text-white fa-solid fa-wallet"></i>
-                                <a href="" style="margin-top: 12px;">
-                                    <p class="text-white">Add Fund </p>
+                            <div class="add_fund_dash" style="display: inline-flex;">
+                                <div class="">
+                                    <i class="m-1 text-white fa-solid fa-plus"></i>
+                                </div>
+                                <a href="add_fund.php" class="bal">
+                                    <p class="text-bold text-white">Add Fund </p>
                                 </a>
                             </div>
                         </div>
@@ -115,8 +114,7 @@ require './include/config.php';
 
                     <li>
 
-                        <h3 class="mt-4 quick "
-                            style="font-family: monospace; color: rgba(34, 104, 244, 0.886); font-weight: bold; ">
+                        <h3 class="mt-4 quick " style="font-family: monospace; color: rgba(34, 104, 244, 0.886); font-weight: bold; ">
                             <u>Quick Links</u>
                         </h3>
                         <div class="row">
@@ -126,8 +124,7 @@ require './include/config.php';
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div
-                                                        class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                         Contact</div>
                                                 </div>
                                                 <div class="col-auto ">
@@ -144,8 +141,7 @@ require './include/config.php';
                                         <div class="card-body bbbb">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div
-                                                        class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                         Airtime </div>
                                                 </div>
                                                 <div class="col-auto">
@@ -163,8 +159,7 @@ require './include/config.php';
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div
-                                                        class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                         Data </div>
                                                 </div>
                                                 <div class="col-auto">
@@ -181,8 +176,7 @@ require './include/config.php';
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div
-                                                        class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                         Activity</div>
                                                 </div>
                                                 <div class="col-auto">
@@ -204,8 +198,7 @@ require './include/config.php';
                 <hr>
 
                 <ul class="lois">
-                    <h3 class="mt-4 quick "
-                        style="font-family: monospace; text-align: center; color: rgba(34, 104, 244, 0.886); font-weight: bold; ">
+                    <h3 class="mt-4 quick " style="font-family: monospace; text-align: center; color: rgba(34, 104, 244, 0.886); font-weight: bold; ">
                         <u>Other Services</u>
                     </h3>
                     <div class="row">
@@ -216,8 +209,7 @@ require './include/config.php';
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-2">
-                                                <div
-                                                    class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
+                                                <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
                                                     Exam Pins</div>
                                             </div>
                                             <div class="col-auto ">
@@ -234,9 +226,8 @@ require './include/config.php';
                                     <div class="card-body bbbb">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-2">
-                                                <div
-                                                    class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
-                                                    Cable TV</div>                
+                                                <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
+                                                    Cable TV</div>
                                             </div>
                                             <div class="col-auto">
                                                 <i class="fas tv fa-tv fa-2x text-gray-300"></i>
@@ -253,9 +244,8 @@ require './include/config.php';
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-2">
-                                                <div
-                                                    class="text-xs elect font-weight-bold text-primary text-uppercase mb-1">
-                                                    Electricity bills </div>                  
+                                                <div class="text-xs elect font-weight-bold text-primary text-uppercase mb-1">
+                                                    Electricity bills </div>
                                             </div>
                                             <div class="col-auto">
                                                 <i class="fas bills fa-plug-circle-check fa-2x text-gray-300"></i>
@@ -271,10 +261,9 @@ require './include/config.php';
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-2">
-                                                <div
-                                                    class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
+                                                <div class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
                                                     Rewards</div>
-                                                
+
                                             </div>
                                             <div class="col-auto">
                                                 <i class="fas fa-gift fa-2x text-gray-300"></i>
@@ -310,8 +299,7 @@ require './include/config.php';
 
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                            aria-label="Search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                         <div class="input-group-append">
                             <button class="btn btn-sidebar">
                                 <i class="fas fa-search fa-fw"></i>
@@ -335,16 +323,17 @@ require './include/config.php';
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="add_fund.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <p>
+                                        Add Fund
                                     </p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="airtime.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas data fa-mobile"></i>
                                     <p> Airtime </p>
@@ -354,7 +343,7 @@ require './include/config.php';
 
 
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="data.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas wifi fa-wifi"></i>
                                     <p> Data </p>
@@ -362,7 +351,7 @@ require './include/config.php';
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="activity.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-list-check"></i>
                                     <!-- <i class="fa-solid fa-chart-simple"></i> -->
@@ -373,7 +362,7 @@ require './include/config.php';
                         <hr>
 
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="contactUs.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-phone"></i>
                                     <p> Contact
@@ -383,7 +372,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="exam_pins.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas pin fa-graduation-cap"></i>
                                     <p> Exam Pins
@@ -393,7 +382,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="cable_tv.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas tv fa-tv"></i>
                                     <p> Cable Tv
@@ -403,7 +392,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="electricity.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas bills fa-plug-circle-check"></i>
                                     <p> Electricity Bills
@@ -413,7 +402,7 @@ require './include/config.php';
                         </li>
 
                         <li class="nav-side">
-                            <a href="" class="nav-link">
+                            <a href="reward.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fas fa-gift"></i>
                                     <p> Rewards
@@ -421,18 +410,7 @@ require './include/config.php';
                                 </div>
                             </a>
                         </li>
-
-                        <!-- <li class="nav-side">
-                            <a href="#" class="nav-link">
-                                <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
-                                    </p>
-                                </div>
-                            </a>
-                        </li> -->
                     </ul>
-
                 </nav>
             </div>
         </aside>
