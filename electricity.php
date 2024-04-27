@@ -130,9 +130,14 @@ require './include/config.php';
                                     <div class="c">
                                         <label for="" class="mt-4">Meter Type</label> <br>
                                         <select name="" id="" class="w-50">
-                                            <option value="" selected> Select Meter Type </option>
-                                            <option value=""> POSTPAID </option>
-                                            <option value=""> PREPAID </option>
+                                            <option value="" selected> Select Provider </option>
+                                            <option value=""> AECD </option>
+                                            <option value=""> EKEDC </option>
+                                            <option value=""> KADUNA </option>
+                                            <option value=""> KIDCO </option>
+                                            <option value=""> IBEDC </option>
+                                            <option value=""> IBEDC </option>
+                                            <option value=""> IBEDC </option>
                                         </select>
                                     </div>
                                     <div class="mt-3">
@@ -179,7 +184,7 @@ require './include/config.php';
         </div> -->
 
 
-    <aside class="main-sidebar sidebar-dark-primary" style="background-color: #3b79f5;">
+    <aside class="main-sidebar bg-primary sidebar-dark-primary elevation-4">
         <div class="sidebar">
 
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -187,7 +192,9 @@ require './include/config.php';
                     <img src="./asset/img/logo.png" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <p class="text-white text-bold" style="font-size: 17px;"> ELEVATIOUS PAY </p>
+
+                    <!-- <a href="#" class="c text-white d-block ">Elevatious Pay </a> -->
+                    <p class="text-monospace  text-bold   " style="font-size: 17px;"> Elevatious Pay </p>
                 </div>
             </div>
 
@@ -203,112 +210,122 @@ require './include/config.php';
             </div>
 
             <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="" role="" data-accordion="">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                     <li class="nav-side">
                         <a href="dashboard.php" class="nav-link">
                             <div class="text-light">
+
                                 <i class="nav-icon  fa-solid fa-house"></i>
                                 <p>
-                                    Dashboard
-                                    <!-- <span class="right badge badge-danger">Main</span> -->
+                                    Home
+                                    <span class="right badge badge-danger">Main</span>
                                 </p>
                             </div>
                         </a>
                     </li>
                     <li class="nav-side">
-                        <a href="add_fund.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fa-solid fa-wallet"></i>
-                                <p>
-                                    Add Fund
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
                     </li>
                     <li class="nav-side">
-                        <a href="airtime.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fas data fa-mobile"></i>
-                                <p> Airtime </p>
+                                <i class="fa-solid fa-list-check"></i>
+                                <p> Transactions</p>
                             </div>
                         </a>
                     </li>
 
-
                     <li class="nav-side">
-                        <a href="data.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fas wifi fa-wifi"></i>
-                                <p> Data </p>
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p> Our Services </p>
                             </div>
                         </a>
                     </li>
+
                     <li class="nav-side">
-                        <a href="activity.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fa-solid fa-list-check"></i>
-                                <!-- <i class="fa-solid fa-chart-simple"></i> -->
-                                <p> Activity </p>
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                <p> Settings </p>
                             </div>
                         </a>
                     </li>
                     <hr>
 
                     <li class="nav-side">
-                        <a href="contactUs.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fa-solid fa-phone"></i>
-                                <p> Contact
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="nav-side">
-                        <a href="exam_pins.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fas pin fa-graduation-cap"></i>
-                                <p> Exam Pins
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="nav-side">
-                        <a href="cable_tv.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fas tv fa-tv"></i>
-                                <p> Cable Tv
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="nav-side">
-                        <a href="electricity.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fas bills fa-plug-circle-check"></i>
-                                <p> Electricity Bills
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="nav-side">
-                        <a href="reward.php" class="nav-link">
+                        <a href="#" class="nav-link">
                             <div class="text-light">
-                                <i class="nav-icon fas fa-gift"></i>
-                                <p> Rewards
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-side">
+                        <a href="#" class="nav-link">
+                            <div class="text-light">
+                                <i class="fa-solid fa-wallet"></i>
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
                     </li>
                 </ul>
+
             </nav>
         </div>
     </aside>
-
+    </div>
 
 
 
