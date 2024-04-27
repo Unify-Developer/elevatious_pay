@@ -32,7 +32,7 @@ require './include/config.php';
 
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
-    <link rel="stylesheet" href="./asset/css/dashboard111.css">
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
 
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
@@ -274,8 +274,7 @@ require './include/config.php';
                                                 <div
                                                     class="text-xs exam font-weight-bold text-primary text-uppercase mb-1">
                                                     Rewards</div>
-                                                
-                                            </div>
+                                                </div>
                                             <div class="col-auto">
                                                 <i class="fas fa-gift fa-2x text-gray-300"></i>
                                             </div>
