@@ -198,6 +198,11 @@
     color: #3f52e3;
 }
 
+.airt:hover .our_services_text{
+    color: white;
+}
+
+
 .airt {
     width: 300px;
     height: 260px;

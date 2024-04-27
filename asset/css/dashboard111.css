@@ -1,78 +1,59 @@
+.hi_username {
+    height: 160px;
+    padding: 10px;
+    background-color: rgba(34, 104, 244, 0.886);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.user_hi{
+    font-family: monospace;
+}
+
+.lois {
+    margin-left: -30px;
+}
+
 .nav-item {
     list-style-type: none;
     padding-right: 40px;
-    
+
 }
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    border-radius: 10px;
-    background: rgba(34, 104, 244, 0.886);
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: transform .4s ease-in-out;
-    transform-origin: left;
+.nav-icon{
+    position: relative;
+    left: -10px;
 }
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
-}
-
-/* .no-arrow::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    border-radius: 10px;
-    background: rgb(100, 81, 207);
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: transform .4s ease-in-out;
-    
-} */
-/* 
-.no-arrow:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
-} */
-
-
-.push{
+.push {
     padding-top: 15px;
     margin-right: 30px;
 }
 
-.nav-link{
+.nav-link {
     font-weight: bold;
-    
+
 }
 
-ul{
+ul {
     list-style-type: none !important;
 }
 
-li{
+li {
     list-style-type: none !important;
 }
-.no-arrow{
+
+.no-arrow {
     padding-top: -5px;
 
 }
 
 
-.infovi{
-    font-family:'Courier New', Courier, monospace;
+.infovi {
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: px;
 }
 
-.quick_links{
+.quick_links {
     height: 80px;
 }
 
@@ -80,24 +61,24 @@ li{
     list-style-type: none !important;  
 } */
 
-.phone_number{
+.phone_number {
     width: 50% !important;
     height: 40px !important;
 }
 
-.amount{
+.amount {
     width: 140px;
 }
 
-.amt{
+.amt {
     margin-left: 100px;
 }
 
-.seee{
+.seee {
     width: 35%;
 }
 
-.airt_airtime{
+.airt_airtime {
     box-shadow: 2px 2px 15px #4e73df;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -109,22 +90,22 @@ li{
     /* font-weight: bold; */
 }
 
-.class-buttons{
+.class-buttons {
     padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
 
-.buttonss{
+.buttonss {
     display: inline-flex;
 }
 
-.fff{
+.fff {
     padding: 5px;
 }
 
-.buy_airtime{
+.buy_airtime {
     font-weight: bold;
     font-family: monospace;
     font-size: large;
@@ -132,79 +113,80 @@ li{
     color: #4e73df;
 }
 
+
 /* .div_buy{
     
 } */
 
 
-@media screen  and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .wifi {
         width: 10px !important;
         position: relative;
         right: 17px;
     }
 
-    .data{
+    .data {
         width: 10px !important;
         position: relative;
         right: 24px;
-        
+
     }
 
-    .elect{
-        font-size: 10px !important; 
-    }
-
-    .exam{
+    .elect {
         font-size: 10px !important;
     }
 
-    .vinc{
+    .exam {
+        font-size: 10px !important;
+    }
+
+    .vinc {
         margin-top: -20px;
     }
 
-    .quick{
+    .quick {
         font-size: 17px;
     }
 
-    .pin{
+    .pin {
         width: 10px !important;
         position: relative;
-        right: 14px; 
+        right: 14px;
     }
 
-    .tv{
+    .tv {
         width: 10px !important;
         position: relative;
         right: 20px;
     }
 
-    .bills{
+    .bills {
         width: 10px !important;
         position: relative;
         right: 16px;
     }
 
-    .fafaf{
+    .fafaf {
         /* width: 100px !important; */
         position: relative;
         right: 65px;
     }
 
-    .phone_number{
+    .phone_number {
         width: 100% !important;
     }
 
-    .airt_airtime{
+    .airt_airtime {
         margin-left: 0px;
         padding: 30px;
     }
 
-    .vincent_airt{
-        display:    block !important;
+    .vincent_airt {
+        display: block !important;
     }
 
-    .amt{
+    .amt {
         margin-left: 0px;
         margin-top: 20px;
     }
@@ -219,27 +201,39 @@ li{
         width: 0px;
     } */
 
-    .netw_ork{
+    .netw_ork {
         width: 700px;
     }
 
-    .buttonss{
+    .buttonss {
         position: relative;
         right: 24px;
         display: inline-flex;
     }
 
-    .class-buttons{
+    .class-buttons {
         padding-left: 0px;
         padding-top: 15px;
         padding-bottom: 10px;
     }
 
-    .fff{
+    .fff {
         padding: 2px !important;
-        
+
     }
 
+    .hi_username {
+        height: 130px !important;
+    }
 
+    .add_fund_dash {
+        position: relative;
+        text-transform: capitalize;
+        left: 170px;
+        bottom: 50px;
+    }
 
+    .user_hi{
+        font-family: monospace;
+    }
 }
