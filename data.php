@@ -36,8 +36,7 @@ require './include/config.php';
 
                     <li class="nav-pushmenu">
                         <div class="push">
-                            <a class="nav-push" data-widget="pushmenu" href="#" role="button"><i
-                                    class="fas fa-bars"></i></a>
+                            <a class="nav-push" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </div>
                     </li>
 
@@ -47,12 +46,10 @@ require './include/config.php';
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 bold">Vincent
                                 TV</span>
-                            <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg"
-                                style="height: 30px; width: 30px;">
+                            <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg" style="height: 30px; width: 30px;">
                         </a>
                         <div class="dropdown-menu dropdown-menu shadow animated--grow-in">
                             <a class="dropdown-item" href="#">
@@ -87,86 +84,86 @@ require './include/config.php';
                                 <hr>
                             </div>
                             <div class="class-buttons">
-                            <div class="vincent_airt" style="display: flex;">
-                                <div class="buttonss" >
-                                    <div class="fff">
-                                        <button type="button" class="mtn btn btn-warning ">MTN</button>
+                                <div class="vincent_airt" style="display: flex;">
+                                    <div class="buttonss">
+                                        <div class="fff">
+                                            <button type="button" class="mtn btn btn-warning ">MTN</button>
+                                        </div>
+                                        <div class="fff">
+                                            <button type="button" class="airtel btn btn-danger">AIRTEL</button>
+                                        </div>
+                                        <div class="fff">
+                                            <button type="button" class="glo btn btn-success">GLO</button>
+                                        </div>
+                                        <div class="fff">
+                                            <button type="button" class="9mobile btn btn-secondary">9Mobile</button>
+                                        </div>
                                     </div>
-                                    <div class="fff">
-                                        <button type="button" class="airtel btn btn-danger">AIRTEL</button>
+                                    <div class="">
+                                        <div class="amt">
+                                            <h6>Amount</h6>
+                                            <input class="amount form-control" type="number" name="phone_number">
+                                        </div>
                                     </div>
-                                    <div  class="fff">
-                                       <button type="button" class="glo btn btn-success">GLO</button>
-                                    </div>
-                                    <div class="fff">
-                                        <button type="button" class="9mobile btn btn-secondary" >9Mobile</button>
+                                </div>
+                                <div class="netw_ork mt-3">
+                                    <h6>Network</h6>
+                                    <select class="seee" placeholder="select ">
+                                        <option value="">MTN</option>
+                                        <option value="">AIRTEL</option>
+                                        <option value="">GLO</option>
+                                        <option value="">9Mobile</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="netw_ork mt-3">
+                                    <h6>Data Type</h6>
+                                    <select class="seee" placeholder="select ">
+                                        <option value="">SMe Data Subscription</option>
+                                        <option value="">Corperate Data Subscription </option>
+                                        <option value="">Global Data Subscription</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="netw_ork mt-3">
+                                    <h6>Data Plan</h6>
+                                    <select class="seee" placeholder="select ">
+                                        <option value="">500MB - data plan</option>
+                                        <option value="">1Gig - data plan</option>
+                                        <option value="">1.5Gig - data plan</option>
+                                        <option value="">2Gig - data plan</option>
+                                        <option value="">5Gig - data plan</option>
+                                        <option value="">10Gig - data plan</option>
+                                        <option value="">12Gig - data plan</option>
+                                        <option value="">15Gig - data plan</option>
+                                        <option value="">20Gig - data plan</option>
+                                        <option value="">25Gig - data plan</option>
+                                        <option value="">30Gig - data plan</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="">
+                                    <div class="mt-4">
+                                        <h6>Phone Number</h6>
+                                        <input class="phone_number form-control" type="number" name="phone_number">
                                     </div>
                                 </div>
                                 <div class="">
-                                    <div class="amt">
-                                        <h6>Amount</h6>
-                                        <input class="amount form-control" type="number" name="phone_number">
+                                    <div class="mt-4">
+                                        <h6>Amount to pay </h6>
+                                        <!-- For the Amount not him to input it  -->
+                                        <!-- Remeber ooooooooooooooooooooooooooooooooooooooooooooo -->
+                                        <input class="phone_number form-control" type="number" name="phone_number">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="netw_ork mt-3">
-                                <h6>Network</h6>
-                                <select class="seee" placeholder="select ">
-                                    <option value="">MTN</option>
-                                    <option value="">AIRTEL</option>
-                                    <option value="">GLO</option>
-                                    <option value="">9Mobile</option>
-
-                                </select>
-                            </div>
-
-                            <div class="netw_ork mt-3">
-                                <h6>Data Type</h6>
-                                <select class="seee" placeholder="select ">
-                                    <option value="">SMe Data Subscription</option>
-                                    <option value="">Corperate Data Subscription </option>
-                                    <option value="">Global Data Subscription</option>
-                                    
-                                </select>
-                            </div>
-
-                            <div class="netw_ork mt-3">
-                                <h6>Data Plan</h6>
-                                <select class="seee" placeholder="select ">
-                                    <option value="">500MB - data plan</option>
-                                    <option value="">1Gig - data plan</option>
-                                    <option value="">1.5Gig - data plan</option>
-                                    <option value="">2Gig - data plan</option>
-                                    <option value="">5Gig - data plan</option>
-                                    <option value="">10Gig - data plan</option>
-                                    <option value="">12Gig - data plan</option>
-                                    <option value="">15Gig - data plan</option>
-                                    <option value="">20Gig - data plan</option>
-                                    <option value="">25Gig - data plan</option>
-                                    <option value="">30Gig - data plan</option>
-
-                                </select>
-                            </div>
-
-                            <div class="">
-                                <div class="mt-4">
-                                    <h6>Phone Number</h6>
-                                    <input class="phone_number form-control" type="number" name="phone_number">
+                                <div class="mt-5">
+                                    <button class="btn btn-primary">
+                                        <label for="">Buy Data</label>
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="">
-                                <div class="mt-4">
-                                    <h6>Amount to pay </h6>
-                                    <!-- For the Amount not him to input it  -->
-                                    <!-- Remeber ooooooooooooooooooooooooooooooooooooooooooooo -->
-                                    <input class="phone_number form-control" type="number" name="phone_number">
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <button class="btn btn-primary">
-                                    <label for="">Buy Data</label>
-                                </button>
-                            </div>
                             </div>
                         </div>
 
@@ -174,9 +171,9 @@ require './include/config.php';
                 </ul>
 
 
-            <footer class="Footer text-center">
-                &copy; Elevatious - Pay | Tech Net &reg; 2024
-            </footer>
+                <footer class="Footer text-center">
+                    &copy; Elevatious - Pay | Tech Net &reg; 2024
+                </footer>
             </div>
 
         </nav>
@@ -185,24 +182,21 @@ require './include/config.php';
         </div> -->
 
 
-        <aside class="main-sidebar bg-primary sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary" style="background-color: #3b79f5;">
             <div class="sidebar">
 
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="./asset/img/eye.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="./asset/img/logo.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-
-                        <!-- <a href="#" class="c text-white d-block ">Elevatious Pay </a> -->
-                        <p class="text-monospace  text-bold   " style="font-size: 17px;"> Elevatious Pay </p>
+                        <p class="text-white text-bold" style="font-size: 17px;"> ELEVATIOUS PAY </p>
                     </div>
                 </div>
 
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                            aria-label="Search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                         <div class="input-group-append">
                             <button class="btn btn-sidebar">
                                 <i class="fas fa-search fa-fw"></i>
@@ -212,119 +206,108 @@ require './include/config.php';
                 </div>
 
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="" role="" data-accordion="">
 
                         <li class="nav-side">
                             <a href="dashboard.php" class="nav-link">
                                 <div class="text-light">
-
                                     <i class="nav-icon  fa-solid fa-house"></i>
                                     <p>
-                                        Home
-                                        <span class="right badge badge-danger">Main</span>
+                                        Dashboard
+                                        <!-- <span class="right badge badge-danger">Main</span> -->
                                     </p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="add_fund.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <i class="nav-icon fa-solid fa-wallet"></i>
+                                    <p>
+                                        Add Fund
                                     </p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="airtime.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-list-check"></i>
-                                    <p> Transactions</p>
+                                    <i class="nav-icon fas data fa-mobile"></i>
+                                    <p> Airtime </p>
                                 </div>
                             </a>
                         </li>
 
+
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="data.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                    <p> Our Services </p>
+                                    <i class="nav-icon fas wifi fa-wifi"></i>
+                                    <p> Data </p>
                                 </div>
                             </a>
                         </li>
-
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="activity.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    <p> Settings </p>
+                                    <i class="nav-icon fa-solid fa-list-check"></i>
+                                    <!-- <i class="fa-solid fa-chart-simple"></i> -->
+                                    <p> Activity </p>
                                 </div>
                             </a>
                         </li>
                         <hr>
 
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="contactUs.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <i class="nav-icon fa-solid fa-phone"></i>
+                                    <p> Contact
                                     </p>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="exam_pins.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <i class="nav-icon fas pin fa-graduation-cap"></i>
+                                    <p> Exam Pins
                                     </p>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="cable_tv.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <i class="nav-icon fas tv fa-tv"></i>
+                                    <p> Cable Tv
                                     </p>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="electricity.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <i class="nav-icon fas bills fa-plug-circle-check"></i>
+                                    <p> Electricity Bills
                                     </p>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-side">
-                            <a href="#" class="nav-link">
+                            <a href="reward.php" class="nav-link">
                                 <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="nav-side">
-                            <a href="#" class="nav-link">
-                                <div class="text-light">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <p> Add Fund
+                                    <i class="nav-icon fas fa-gift"></i>
+                                    <p> Rewards
                                     </p>
                                 </div>
                             </a>
                         </li>
                     </ul>
-
                 </nav>
             </div>
         </aside>

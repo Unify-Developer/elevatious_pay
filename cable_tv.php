@@ -12,7 +12,7 @@ require './include/config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Electricity Payment | Elevatious Pay</title>
+    <title> CABLE TV | Elevatious Pay</title>
 
     <link rel="icon" href="./asset/img/logo.png">
 
@@ -44,7 +44,7 @@ require './include/config.php';
 
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> ELECTRICITY PAYMENT</a>
+                        <a class="nav-link text-primary" href="#"> CABLE TV </a>
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
@@ -82,35 +82,20 @@ require './include/config.php';
                     <li>
                         <div class="airt_airtime">
                             <div class="div_buy">
-                                <p> Electricity Payment </p>
-                                <h4 class="buy_airtime"> Electricity Bills </h4>
+                                <!-- <p> CABLE TV </p> -->
+                                <h4 class="buy_airtime"> CABLE TV SUBSCRIPTION </h4>
                                 <hr>
                             </div>
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="row">
-                                        <div class="col-md-1 col-3">
+                                        <div class="col-md-4 col-4">
                                             <img src="./asset/img/logo.png" height="70" width="80">
                                         </div>
-                                        <div class="col-md-1 col-3">
+                                        <div class="col-md-4 col-4">
                                             <img src="./asset/img/logo.png" height="70" width="80">
                                         </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
+                                        <div class="col-md-4 col-4">
                                             <img src="./asset/img/logo.png" height="70" width="80">
                                         </div>
                                     </div>
@@ -118,21 +103,22 @@ require './include/config.php';
                                         <label for="" class="mt-4">Provider</label> <br>
                                         <select name="" id="" class="w-50">
                                             <option value="" selected> Select Provider </option>
-                                            <option value=""> AECD </option>
-                                            <option value=""> EKEDC </option>
-                                            <option value=""> KADUNA </option>
-                                            <option value=""> KIDCO </option>
-                                            <option value=""> IBEDC </option>
-                                            <option value=""> IBEDC </option>
-                                            <option value=""> IBEDC </option>
+                                            <option value=""> DSTV </option>
+                                            <option value=""> GOTV </option>
+                                            <option value=""> StarTimes </option>
                                         </select>
                                     </div>
-                                    <div class="c">
-                                        <label for="" class="mt-4">Meter Type</label> <br>
+                                    <div class="">
+                                        <label for="" class="mt-4">Plan</label> <br>
                                         <select name="" id="" class="w-50">
-                                            <option value="" selected> Select Meter Type </option>
-                                            <option value=""> POSTPAID </option>
-                                            <option value=""> PREPAID </option>
+                                            <option value="" selected> Select Plan </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
                                         </select>
                                     </div>
                                     <div class="mt-3">
@@ -142,16 +128,29 @@ require './include/config.php';
                                 </div>
                                 <div class="col-md-4">
                                     <div class="col-md-12 co-12">
-                                        <label for="">Amount</label>
-                                        <input type="number" class="form-control">
+                                        <label for=""class="" >Subscription Type</label>
+                                        <select name="" id="" class="w-100">
+                                            <option value="" selected> Select Plan </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                            <option value="">  </option>
+                                        </select>
                                     </div>
                                     <div class="col-md-12 col-12 mt-3">
                                         <label for="">Amount to pay</label>
                                         <input type="number" class="form-control">
                                     </div>
                                     <div class="col-md-12 col-12 mt-3">
+                                        <label for="">IUC Number</label>
+                                        <input type="number" class="form-control" placeholder="IUC Number">
+                                    </div>
+                                    <div class="col-md-12 col-12 mt-3">
                                         <div class="mt-5">
-                                            <button class="mt-5 btn btn-primary">
+                                            <button class="btn btn-primary">
                                                 <label class="m-1" for="">PROCEED</label>
                                             </button>
                                         </div>
@@ -168,7 +167,7 @@ require './include/config.php';
 
 
 
-    <footer class="Footer text-center">
+    <footer class="Footer text-center" style="margin-top: 100px; margin-left: 210px;">
         &copy; Elevatious - Pay | Tech Net &reg; 2024
     </footer>
     </div>

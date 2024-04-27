@@ -12,7 +12,7 @@ require './include/config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Electricity Payment | Elevatious Pay</title>
+    <title> CABLE TV | Elevatious Pay</title>
 
     <link rel="icon" href="./asset/img/logo.png">
 
@@ -22,7 +22,7 @@ require './include/config.php';
 
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
-    <link rel="stylesheet" href="./asset/css/dashboard.css">
+    <link rel="stylesheet" href="./asset/css/dash.css">
 
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
@@ -44,7 +44,7 @@ require './include/config.php';
 
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> ELECTRICITY PAYMENT</a>
+                        <a class="nav-link text-primary" href="#"> EXAM PINS </a>
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
@@ -82,80 +82,57 @@ require './include/config.php';
                     <li>
                         <div class="airt_airtime">
                             <div class="div_buy">
-                                <p> Electricity Payment </p>
-                                <h4 class="buy_airtime"> Electricity Bills </h4>
+                                <!-- <p> CABLE TV </p> -->
+                                <h4 class="buy_airtime"> EXAM CHECKERS </h4>
                                 <hr>
                             </div>
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="row">
-                                        <div class="col-md-1 col-3">
+                                        <div class="col-md-4 col-4">
                                             <img src="./asset/img/logo.png" height="70" width="80">
                                         </div>
-                                        <div class="col-md-1 col-3">
+                                        <div class="col-md-4 col-4">
                                             <img src="./asset/img/logo.png" height="70" width="80">
                                         </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
-                                            <img src="./asset/img/logo.png" height="70" width="80">
-                                        </div>
-                                        <div class="col-md-1 col-3">
+                                        <div class="col-md-4 col-4">
                                             <img src="./asset/img/logo.png" height="70" width="80">
                                         </div>
                                     </div>
                                     <div class="">
-                                        <label for="" class="mt-4">Provider</label> <br>
-                                        <select name="" id="" class="w-50">
-                                            <option value="" selected> Select Provider </option>
-                                            <option value=""> AECD </option>
-                                            <option value=""> EKEDC </option>
-                                            <option value=""> KADUNA </option>
-                                            <option value=""> KIDCO </option>
-                                            <option value=""> IBEDC </option>
-                                            <option value=""> IBEDC </option>
-                                            <option value=""> IBEDC </option>
-                                        </select>
-                                    </div>
-                                    <div class="c">
-                                        <label for="" class="mt-4">Meter Type</label> <br>
-                                        <select name="" id="" class="w-50">
-                                            <option value="" selected> Select Meter Type </option>
-                                            <option value=""> POSTPAID </option>
-                                            <option value=""> PREPAID </option>
+                                        <label for="" class="mt-4">Exam Type</label> <br>
+                                        <select name="" id="" class="w-100 form-control ">
+                                                <option value="" selected> Select Provider </option>
+                                                <option value=""> WAEC </option>
+                                                <option value=""> NECO </option>
+                                                <option value=""> NABTEB </option>
                                         </select>
                                     </div>
                                     <div class="mt-3">
-                                        <p>Customer Phone Number</p>
-                                        <input type="number" class="form-control w-50">
+                                        <p> QUANTITY</p>
+                                        <select name="" id="" class="w-100 form-control">
+                                            <option value="" selected> Select Plan </option>
+                                            <option value=""> </option>
+                                            <option value=""> </option>
+                                            <option value=""> </option>
+                                            <option value=""> </option>
+                                            <option value=""> </option>
+                                            <option value=""> </option>
+                                            <option value=""> </option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="col-md-12 co-12">
-                                        <label for="">Amount</label>
-                                        <input type="number" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 col-12 mt-3">
-                                        <label for="">Amount to pay</label>
-                                        <input type="number" class="form-control">
+                                    <div class="mt-3">
+                                        <p>Amount To Pay</p>
+                                        <input type="number" class="form-control w-100" placeholder="Amount">
                                     </div>
                                     <div class="col-md-12 col-12 mt-3">
                                         <div class="mt-5">
-                                            <button class="mt-5 btn btn-primary">
+                                            <button class="btn btn-primary">
                                                 <label class="m-1" for="">PROCEED</label>
                                             </button>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -168,7 +145,7 @@ require './include/config.php';
 
 
 
-    <footer class="Footer text-center">
+    <footer class="Footer text-center" style="margin-top: 100px; margin-left: 210px;">
         &copy; Elevatious - Pay | Tech Net &reg; 2024
     </footer>
     </div>
