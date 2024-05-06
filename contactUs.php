@@ -44,7 +44,7 @@ require './include/config.php';
 
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Airtime Subscription</a>
+                        <a class="nav-link text-primary" href="#">Contact Us</a>
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
@@ -82,7 +82,7 @@ require './include/config.php';
                     <li>
                         <div class="airt_airtime">
                             <div class="div_buy">
-                                <p> Get in Touch With Us </p>
+                                <p class="text-bold"> Get in Touch With Us </p>
                                 <h4 class="buy_airtime"> Contact Us <i class="fas fa-phone"></i> </h4>
                                 <hr>
                             </div>
@@ -175,7 +175,6 @@ require './include/config.php';
             
         </div> -->
 
-
         <aside class="main-sidebar sidebar-dark-primary" style="background-color: #3b79f5;">
             <div class="sidebar">
 
@@ -190,7 +189,8 @@ require './include/config.php';
 
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
                         <div class="input-group-append">
                             <button class="btn btn-sidebar">
                                 <i class="fas fa-search fa-fw"></i>
@@ -217,8 +217,7 @@ require './include/config.php';
                             <a href="add_fund.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-wallet"></i>
-                                    <p>
-                                        Add Fund
+                                    <p> Add Fund
                                     </p>
                                 </div>
                             </a>
@@ -242,7 +241,7 @@ require './include/config.php';
                             </a>
                         </li>
                         <li class="nav-side">
-                            <a href="activity.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-list-check"></i>
                                     <!-- <i class="fa-solid fa-chart-simple"></i> -->

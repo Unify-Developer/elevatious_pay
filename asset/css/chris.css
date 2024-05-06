@@ -27,15 +27,24 @@
     height: 590px;
 }
 
-.bd_head {
+.bd_had {
     border-radius: 20px;
-    margin-top: 50px;
-    width: 400px !important;
+    margin-top: 20px !important;
+    width: 200px !important;
     height: 90%;
     box-shadow: 5px 5px 50px rgb(191, 191, 199);
     background-color: white !important;
+    
 }
 
+.fffff{
+    width: 100px !important;
+    background-color: red;
+}
+
+.LandR{
+    margin-bottom: 30px;
+}
 .logo_img {
     border-radius: 600px;
     margin-top: 30px;
@@ -110,16 +119,16 @@
 .wel_pay {
     margin-top: 100px;
     font-family: "Work Sans", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
 }
 
 .sub_title {
-    color: white;
+    /* color: white; */
     display: block;
     font-size: 30px;
     font-weight: 700;
@@ -131,7 +140,7 @@
     letter-spacing: 1px;
     line-height: 1.4;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
 }
 
 .lg_btn {
@@ -322,6 +331,13 @@
     font-family: monospace;
 }
 
+/* .bd_had{
+    
+} */
+/* .welcome{
+
+} */
+
 @media screen and (max-width: 600px) {
     .home_img_svg {
         height: 0%;
@@ -329,11 +345,12 @@
     }
 
     .bd_head {
-        margin-top: 0px;
+        margin-top: 20px;
         width: 90% !important;
         /* margin: 50px auto; */
-        padding: 20px;
+        padding: 0px;
         height: 100%;
+        margin-bottom: 50px;
     }
 
 
@@ -464,4 +481,9 @@
         font-weight: bold !important;
         font-family: monospace;
     }
+
+    /* .bd_had{
+        margin-top: 0%;
+        margin-left: 0% !important;
+    } */
 }

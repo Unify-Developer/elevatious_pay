@@ -1,5 +1,6 @@
 <?php
 require './include/config.php';
+
 ?>
 
 <html lang="en">
@@ -7,7 +8,7 @@ require './include/config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> PROFILE | Elevatious Pay</title>
+    <title> DEPOSIT PROCESS | Elevatious Pay</title>
 
     <link rel="icon" href="./asset/img/logo.png">
 
@@ -21,29 +22,6 @@ require './include/config.php';
 
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
-    <style>
-        .button-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        form {
-            display: none;
-            /* Hide forms by default */
-        }
-
-        #profile-form {
-            display: block;
-            /* Show profile form by default */
-        }
-    </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -62,7 +40,7 @@ require './include/config.php';
 
 
                     <li class="nav-item active">
-                        <a class="nav-link text-primary" href="#"> ACCOUNT DETAILS </a>
+                        <a class="nav-link text-primary" href="#"> DEPOSIT </a>
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
@@ -72,7 +50,7 @@ require './include/config.php';
                             <img class="img-profile rounded-circle" src="./asset/img/undraw_profile.svg" style="height: 30px; width: 30px;">
                         </a>
                         <div class="dropdown-menu dropdown-menu shadow animated--grow-in">
-                            <a class="dropdown-item" href="profile.php">
+                            <a class="dropdown-item" href="#">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Profile
                             </a>
@@ -85,8 +63,8 @@ require './include/config.php';
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="logout.php">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"> </i>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">
+                                <i href="./logout.php" class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"> </i>
                                 Logout
                             </a>
                         </div>
@@ -100,59 +78,35 @@ require './include/config.php';
                     <li>
                         <div class="airt_airtime">
                             <div class="div_buy">
-                                <div class="button-container">
-                                    <!-- Buttons to toggle forms -->
-                                    <button class="btn1 bg-primary" onclick="showForm('profile-form')">Profile</button>
-                                    <button class="btn2 bg-primary" onclick="showForm('password-form')">Password</button>
-                                    <button class="btn3 bg-primary" onclick="showForm('pin-form')">PIN</button>
-                                </div>
+                                <!-- <p> CABLE TV </p> -->
+                                <h4 class="buy_airtime"> DEPOSIT DETAIL </h4>
                                 <hr>
-                                <div>
-                                    <form action="" method="post" id="profile-form">
-                                        <h4 class="text-primary" style="font-size: 15px;"> Basic Information </h4>
-                                        <i class="fa-solid fa-user text-primary"></i>
-                                        <label for="">Name: <?php echo isset($_SESSION['full_name']) ? $_SESSION['full_name'] : 'N/A'; ?></label>
-                                        <br>
-                                        <i class="fa-solid fa-envelope text-primary"></i>
-                                        <label for="">Email: <?php echo isset($_SESSION['email_address']) ? $_SESSION['email_address'] : 'N/A'; ?></label>
-                                        <br>
-                                        <i class="fa-solid fa-phone text-primary"></i>
-                                        <label for="">Phone Number: <?php echo isset($_SESSION['phone_number']) ? $_SESSION['phone_number'] : 'N/A'; ?></label>
-                                        <br>
-                                        <h4 class="text-primary" style="font-size: 15px;"> Referral </h4>
+                                <?php
+                                // Check if the form is submitted
+                                if (isset($_POST['submit'])) {
 
-                                        <div>
-                                            <button type="button" class="btn btn-danger">Copy LInk</button>
-                                            <button type="button" class="btn btn-success">View Commision</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <form id="password-form">
-                                <h4 class="text-primary" style="font-size: 15px;"> Change Password </h4>
-                                    Current Password: <input type="password" name="current-password" class="form-control">
-                                    New Password: <input type="password" name="new-password" class="form-control">
-                                    Confirm New Password: <input type="password" name="confirm-password" class="form-control">
-                                    <button class="btn bg-primary mt-3 " type="button">Change Password</button>
-                                </form>
-                                <form id="pin-form">
-                                <h4 class="text-primary" style="font-size: 15px;"> Set PIN </h4>
-                                <div class="mt"></div>
-                                    Enter New Pin: <input type="number"  name="pin" class="form-control">
-                                    Re-enter PIN: <input type="number"  name="pin" class="form-control">
-                                    <button class="btn btn-primary mt-4" type="button">Set PIN</button>
-                                </form>
+                                    $amount = $_POST['amount'];
 
-                                <script>
-                                    function showForm(formId) {
-                                        // Hide all forms first
-                                        document.querySelectorAll('form').forEach(form => {
-                                            form.style.display = 'none';
-                                        });
-                                        // Show the selected form
-                                        document.getElementById(formId).style.display = 'block';
-                                    }
-                                </script>
-                                <hr>
+                                    // Display the entered amount
+                                    echo "<p>You are depositing: $amount</p>";
+
+                                    // Display account details (replace with your actual account details)
+                                    $accountNumber = "7049910287";
+                                    $accountName = "Elevatious Pay";
+                                    $bankName = "US Bank";
+
+                                    echo "<p>Send the deposit to the following account:</p>";
+                                    echo "<p>Account Number: $accountNumber</p>";
+                                    echo "<p>Account Name: $accountName</p>";
+                                    echo "<p>Bank Name: $bankName</p>";
+
+                                    // You can proceed with further processing or confirmation steps here
+                                } else {
+                                    // If the form is not submitted, redirect back to the deposit form
+                                    header("Location: dashboard.php");
+                                    exit();
+                                }
+                                ?>
                             </div>
 
                         </div>
@@ -165,7 +119,7 @@ require './include/config.php';
 
 
 
-    <footer class="Footer text-center">
+    <footer class="Footer text-center" style="margin-top: 100px; margin-left: 210px;">
         &copy; Elevatious - Pay | Tech Net &reg; 2024
     </footer>
     </div>

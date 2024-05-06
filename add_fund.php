@@ -12,7 +12,7 @@ require './include/config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> CABLE TV | Elevatious Pay</title>
+    <title> Add Funds | Elevatious Pay</title>
 
     <link rel="icon" href="./asset/img/logo.png">
 
@@ -24,8 +24,8 @@ require './include/config.php';
 
     <link rel="stylesheet" href="./asset/css/dashboard.css">
 
-    <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/sb-admin-2.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -83,10 +83,14 @@ require './include/config.php';
                         <div class="airt_airtime">
                             <div class="div_buy">
                                 <!-- <p> CABLE TV </p> -->
-                                <h4 class="buy_airtime"> ADD FUND </h4>
-                                <hr>
+                                <p>
+                                <h4 class="buy_airtime"> =N= 0.00 </h4>
+                                </p>
+                                <?php include('modal.php'); ?>
+
                             </div>
-                            
+
+
                         </div>
                     </li>
                 </ul>
@@ -97,7 +101,7 @@ require './include/config.php';
 
 
 
-    <footer class="Footer text-center" >
+    <footer class="Footer text-center">
         &copy; Elevatious - Pay | Tech Net &reg; 2024
     </footer>
     </div>
@@ -149,8 +153,7 @@ require './include/config.php';
                         <a href="add_fund.php" class="nav-link">
                             <div class="text-light">
                                 <i class="nav-icon fa-solid fa-wallet"></i>
-                                <p>
-                                    Add Fund
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
@@ -244,14 +247,13 @@ require './include/config.php';
 
 
 
-
     <script src="plugins/jquery/jquery.min.js"></script>
 
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="dist/js/adminlte.js"></script>
 
-    <script src="bootstrap/JS/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src="bootstrap\JS\sb-admin-2.min.js"></script>
 </body>

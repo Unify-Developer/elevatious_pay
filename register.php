@@ -7,39 +7,40 @@ $msg = '';
 if (isset($_POST['register'])) {
     $full_name = $_POST['full_name'];
     $email_address = $_POST['email_address'];
-    $user_name = $_POST['user_name'];
+    $user_name = $_POST['username'];
     $referral = $_POST['referral'];
     $phone_number = $_POST['phone_number'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
+
     if ($password !== $confirm_password) {
-        $msg = "Password and Confirm Password do not match!";
+        $msg = "Password do not match!";
     } else {
         // Hash the password
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO student (full_name, email_address, user_name, referral, phone_number, password, confirm_password) 
-        VALUES(:full_name,:email_address,:user_name,:referral,:phone_number,:password,:confirm_password)";
+        VALUES(:full_name,:email_address,:username,:referral,:phone_number,:password,:confirm_password)";
+
 
         $statement = $conn->prepare($sql);
 
         $statement->execute([
             'full_name' => $full_name,
             'email_address' => $email_address,
-            'user_name' => $user_name,
+            'username' => $user_name,
             'referral' => $referral,
             'phone_number' => $phone_number,
             'password' => $hashed_password,
             'confirm_password' => $hashed_password,
         ]);
 
-        
-        if(true){
-            $msg = "Details uploaded successfully";
-         }
-        }
 
+        if (true) {
+            $msg = "Details uploaded successfully";
+        }
+    }
 }
 
 ?>
@@ -51,15 +52,14 @@ if (isset($_POST['register'])) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Register | Elavtion Pay </title>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="icon" href="./asset/Img/reference.png">
-    <link rel="stylesheet" href="./asset/css/kolade.css">
+    <link rel="stylesheet" href="./asset/css/register.css">
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
 </head>
 
 <body>
+    <span style="color: red;"><?php echo $msg; ?></span>
     <div class="container">
         <div class="text-center">
             <img class="t_img" src="./Asset/Img/reference.png">
@@ -83,36 +83,28 @@ if (isset($_POST['register'])) {
                         </div>
                         <div class="col-lg-12 col-md-12  form-group">
                             <label for> Email Address </label>
-                            <input type="email" name="email_address" class="form-control" placeholder="Email Address"
-                                required>
+                            <input type="email" name="email_address" class="form-control" placeholder="Email Address" required>
                         </div>
                         <div class="col-lg-12 col-md-12  form-group">
                             <label for> Username </label>
-                            <input type="text" name="user_name" class="form-control" placeholder="Input your Username"
-                                optional>
+                            <input type="text" name="username" class="form-control" placeholder="Input your Username" required>
                         </div>
                         <div class="col-lg-6 col-md-12  form-group">
                             <label for> Referral </label>
-                            <input type="text" name="referral" class="form-control" placeholder="Referral (Optional)"
-                                optional>
+                            <input type="text" name="referral" class="form-control" placeholder="Referral (Optional)" optional>
                         </div>
                         <div class="col-lg-6 col-md-12  form-group">
                             <label for> Phone Number </label>
-                            <input type='number' name="phone_number" class="form-control" placeholder="Phone Number"
-                                required>
+                            <input type='number' name="phone_number" class="form-control" placeholder="Phone Number" required>
                         </div>
 
                         <div class="col-lg-6 col-md-12  form-group">
                             <label for> Password </label>
-                            <input type="password" name="password" class="form-control" placeholder="Password"
-                                required>
+                            <input type="password" name="password" class="form-control" placeholder="Password" required>
                         </div>
                         <div class="col-lg-6 col-md-12  form-group">
                             <label for> Confirm Password </label>
-                            <input type="password" name="confirm_password" class="form-control"
-                                placeholder="Confirm Password">
-                            <!-- Display error message in red -->
-                            <span style="color: red;"><?php echo $msg; ?></span>
+                            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password">
                         </div>
                     </div>
                     <div class="text-center" style="padding: 10px;">

@@ -1,0 +1,56 @@
+/* Custom Modal Overlay */
+.custom-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Higher z-index to overlay other elements */
+}
+
+/* Custom Modal */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001; /* Higher z-index to appear above overlay */
+}
+
+/* Modal Content */
+.custom-modal-content {
+    /* Customize modal content if needed */
+}
+
+/* Modal Header */
+.custom-modal-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Modal Close Button */
+.custom-modal-close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Modal Body */
+.custom-modal-body {
+    padding: 20px;
+}
+
+/* Modal Footer */
+.custom-modal-footer {
+    padding-top: 10px;
+    text-align: center;
+}

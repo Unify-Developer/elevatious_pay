@@ -7,15 +7,15 @@
 }
 
 .user_hi {
-    font-family: monospace;
+    font-family: monospace;    
 }
 
-.bal {
+.bal{
     text-decoration: none !important;
     color: white;
 }
 
-.bal:hover {
+.bal:hover{
     text-decoration: none !important;
     color: white;
 }
@@ -34,12 +34,7 @@
 .nav-icon {
     position: relative;
     left: -10px;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
-}
+}   
 
 .push {
     padding-top: 15px;
@@ -251,7 +246,7 @@ li {
     color: white;
 }
 
-.add_fund_dash {
+.add_fund_dash{
     margin-top: 70px;
 }
 

@@ -1,31 +1,31 @@
 <?php
 require './include/config.php';
 
-$msg = "";
+// $msg = "";
 
-if (isset($_POST['loginaa'])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-
-    $sql = $conn->prepare("SELECT * FROM student WHERE username = :username AND password = :password");
-    $sql->bindParam(':username', $username);
-    $sql->bindParam(':password', $password);
-    $sql->execute();
+// if (isset($_POST['loginaa'])) {
+//     $user_name = $_POST["user_name"];
+//     $password = $_POST["password"];
 
 
+//     $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name AND password = :password");
+//     $sql->bindParam(':user_name', $user_name);
+//     $sql->bindParam(':password', $password);
+//     $sql->execute();
 
-    if ($sql->rowCount() >= 0) {
 
-        $result = $sql->fetch(PDO::FETCH_ASSOC);
 
-        // $msg = 'Welcome '. $result[ 'full_name' ];
+//     if ($sql->rowCount() >= 0) {
 
-        header('Location: dashboard.php');
-    } else {
-        $msg = 'Invalid login Details';
-    }
-};
+//         $result = $sql->fetch(PDO::FETCH_ASSOC);
+
+//         // $msg = 'Welcome '. $result[ 'full_name' ];
+
+//         header('Location: dashboard.php');
+//     } else {
+//         $msg = 'Invalid login Details';
+//     }
+// };
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ if (isset($_POST['loginaa'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Home | ELevatious-Pay</title>
         <link rel="icon" href="./asset/Img/reference.png">
-        <link rel="stylesheet" href="./asset/css/mercy1.css">
+        <link rel="stylesheet" href="./asset/css/chris.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -81,12 +81,12 @@ if (isset($_POST['loginaa'])) {
 
     <div class="container-fluid bg-home ">
         <div class="row">
-            <div class="col-md-7 col-12">
+            <div class="col-md-7 col-12 mr-4" >
                 <img src="./asset/img/home.svg" class="home_img_svg" title="ELevatious Home Image" alt="ELevatious Home Image">
             </div>
-            <div class="col-md-5 col-12">
-                <div class="container bg-light bd_head">
-                    <form action method='post'>
+            <!-- <div class="col-md-4 col-12">
+                <div class="container bg-light bd_had w-100">
+                    <form action="" method='post'>
                         <div class="img_cent">
                             <img src="./asset/img/logo.png" height="100" class="rounded-circle logo_img">
                         </div>
@@ -98,7 +98,7 @@ if (isset($_POST['loginaa'])) {
                         <div>
                             <label for>
                                 <p class="add mt-1"> Username </p>
-                                <input type="text" name="username" class="form-control userName" placeholder="Username">
+                                <input type="text" name="user_name" class="form-control userName" placeholder="Username">
                             </label>
                         </div>
                         <div>
@@ -120,30 +120,34 @@ if (isset($_POST['loginaa'])) {
                         </p>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="col-md-5 col-12 ">
-                <div class="wel_pay">
-                    <p> WELCOME TO ELEVATIOUS PAY</p>
+            </div> -->
+            <div class="mt-5"></div>
+            <!-- <div class="col-md-4 mt-5 ml-5 col-12 bg-light bd_had text-center">
+                <div class="wel_pay text-dark text-monospace  ">
+                    <p class="text-primary"> WELCOME TO ELEVATIOUS PAY</p>
                 </div>
-                <div class="sub_title">
+                <div class="sub_title text-dark ">
                     <p> Easiest Solution To All <br> Your Telecom Needs</p>
                 </div>
-                <div class="sub_text">
-                    <p> Elevatious Has Made it Possible to Conveniently <br>
-                        Convert Airtime to Cash, Pay Varieties of Utility <br>
-                        Bills and Merchants Instantly with Ease, Deliver <br>
-                        Data Subscription and Airtime Top Up <br>
-                        Automatedly, Send Bulk SMS, amongst others. </p>
+                <div class="sub_text text-dark">
+
+                    <p> <i> Elevatious Has Made it Possible to Conveniently <br>
+                            Convert Airtime to Cash, Pay Varieties of Utility <br>
+                            Bills and Merchants Instantly with Ease, Deliver <br>
+                            Data Subscription and Airtime Top Up <br>
+                            Automatedly, Send Bulk SMS, amongst others.
+                        </i></p>
+
                 </div>
-                <div class="" style="display: inline-flex;">
+                <div class="LandR" style="display: inline-flex;">
                     <div>
-                        <a href="./index.php">
+                        <a href="login.php">
                             <div class="btn lg_btn p-3"> Login
                             </div>
                         </a>
                     </div>
                     <div>
-                        <a href="">
+                        <a href="register.php">
                             <div class="btn reg_btn p-3">Register </div>
                         </a>
                     </div>

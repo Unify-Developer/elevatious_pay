@@ -1,5 +1,4 @@
 <?php
-
 require './include/config.php';
 $msg = '';
 
@@ -7,26 +6,31 @@ if (isset($_POST['login'])) {
     $user_name = $_POST['user_name'];
     $password = $_POST['password'];
 
-    $sql = $conn->prepare("SELECT * FROM student WHERE user_name = :user_name");
-    $sql->bindParam(':user_name', $user_name);
+    $sql = $conn->prepare("SELECT * FROM student WHERE user_name = '$user_name' and password = '$password'");
+
     $sql->execute();
 
     if ($sql->rowCount() > 0) {
         $result = $sql->fetch(PDO::FETCH_ASSOC);
-        
-        // Verify the input password against the hashed password stored in the database
-        if (password_verify($password, $result['password'])) {
-            // Password is correct, redirect to dashboard
-            header('Location: dashboard.php');
-            exit();
-        } else {
-            $msg = "Invalid Password";
-        }
+
+        // Store user information in session variables
+        $_SESSION['user_name'] = $result['user_name'];
+        $_SESSION['full_name'] = $result['full_name'];
+        $_SESSION['email_address'] = $result['email_address'];
+        $_SESSION['phone_number'] = $result['phone_number'];
+        $_SESSION['connected'] = true;
+        // Add more fields as needed
+
+        header('Location: dashboard.php');
+        exit();
     } else {
-        $msg = "User not found";
+        $msg = 'Wrong Info';
+        $_SESSION['connected'] = false;
+        session_destroy();
     }
 }
 ?>
+
 
 
 
@@ -39,7 +43,7 @@ if (isset($_POST['login'])) {
     <title> Login | Elevation Pay </title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="icon" href="./asset/Img/reference.png">
-    <link rel="stylesheet" href="./asset/css/kolade.css">
+    <link rel="stylesheet" href="./asset/css/register.css">
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
 </head>
 

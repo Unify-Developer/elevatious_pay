@@ -42,7 +42,7 @@ require './include/config.php';
 
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Data Subscription</a>
+                        <a class="nav-link text-primary" href="#">Data Subscription</a>
                     </li>
 
                     <li class="nav-item dropdown no-arrow ml-auto ">
@@ -108,7 +108,7 @@ require './include/config.php';
                                 </div>
                                 <div class="netw_ork mt-3">
                                     <h6>Network</h6>
-                                    <select class="seee" placeholder="select ">
+                                    <select class="w-50 form-control" placeholder="select ">
                                         <option value="">MTN</option>
                                         <option value="">AIRTEL</option>
                                         <option value="">GLO</option>
@@ -119,9 +119,9 @@ require './include/config.php';
 
                                 <div class="netw_ork mt-3">
                                     <h6>Data Type</h6>
-                                    <select class="seee" placeholder="select ">
+                                    <select class="w-50 seee form-control" placeholder="select ">
                                         <option value="">SMe Data Subscription</option>
-                                        <option value="">Corperate Data Subscription </option>
+                                        <option value="">Corporate Data Subscription </option>
                                         <option value="">Global Data Subscription</option>
 
                                     </select>
@@ -129,7 +129,7 @@ require './include/config.php';
 
                                 <div class="netw_ork mt-3">
                                     <h6>Data Plan</h6>
-                                    <select class="seee" placeholder="select ">
+                                    <select class="w-50 seee form-control" placeholder="select ">
                                         <option value="">500MB - data plan</option>
                                         <option value="">1Gig - data plan</option>
                                         <option value="">1.5Gig - data plan</option>
@@ -196,7 +196,8 @@ require './include/config.php';
 
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
                         <div class="input-group-append">
                             <button class="btn btn-sidebar">
                                 <i class="fas fa-search fa-fw"></i>
@@ -223,8 +224,7 @@ require './include/config.php';
                             <a href="add_fund.php" class="nav-link">
                                 <div class="text-light">
                                     <i class="nav-icon fa-solid fa-wallet"></i>
-                                    <p>
-                                        Add Fund
+                                    <p> Add Fund
                                     </p>
                                 </div>
                             </a>

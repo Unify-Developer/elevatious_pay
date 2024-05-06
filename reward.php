@@ -22,7 +22,7 @@ require './include/config.php';
 
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
-    <link rel="stylesheet" href="./asset/css/dash.css">
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
 
     <link rel="stylesheet" href="./bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/CSS/sb-admin-2.css">
@@ -86,7 +86,7 @@ require './include/config.php';
                                 <h4 class="buy_airtime"> REWARDS </h4>
                                 <hr>
                             </div>
-                            
+
                         </div>
                     </li>
                 </ul>
@@ -149,8 +149,7 @@ require './include/config.php';
                         <a href="add_fund.php" class="nav-link">
                             <div class="text-light">
                                 <i class="nav-icon fa-solid fa-wallet"></i>
-                                <p>
-                                    Add Fund
+                                <p> Add Fund
                                 </p>
                             </div>
                         </a>
@@ -174,7 +173,7 @@ require './include/config.php';
                         </a>
                     </li>
                     <li class="nav-side">
-                        <a href="activity.php" class="nav-link">
+                        <a href="" class="nav-link">
                             <div class="text-light">
                                 <i class="nav-icon fa-solid fa-list-check"></i>
                                 <!-- <i class="fa-solid fa-chart-simple"></i> -->
@@ -237,7 +236,6 @@ require './include/config.php';
             </nav>
         </div>
     </aside>
-
 
 
 
